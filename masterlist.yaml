@@ -223,6 +223,13 @@ globals:
 # Latest LOOT Thread
   - *latestLOOTThread
 
+# Warn users of plugins that were made before the CK was released
+# Temporary warning - Pending removal once CK is released
+  - type: warn
+    content:
+      - lang: en
+        text: 'It is recommended not to use mods that contain **plugins** (i.e. files ending in **.esm**, **.esp** or **.esl**), until official modding tools have been made available.'
+
 # Latest Version
   # Starfield Game Runtime
 
