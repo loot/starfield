@@ -232,6 +232,12 @@ globals:
 
 # Latest Version
   # Starfield Game Runtime
+#  - <<: *versionOldX
+#    subs: [ '**Starfield**' ]
+#    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.7.23.0", >=) and product_version("../Starfield.exe", "1.7.23.0", <)'
+  - <<: *versionUpToDateX
+    subs: [ '**Starfield**' ]
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.7.23.0", >=)'
 
 groups:
   - name: &mainGroup Main Plugins
