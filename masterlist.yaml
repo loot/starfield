@@ -1,0 +1,367 @@
+# LOOT ignores anything that doesn't come under 'bash_tags', 'globals',
+# 'groups', or 'plugins', so a section like 'common' is useful for storing
+# data that gets re-used.
+prelude:
+  common:
+  # Message Anchors
+    - &alreadyInX
+      type: error
+      content: 'Delete. Already included in %1%.'
+
+    - &alreadyInOrFixedByX
+      type: error
+      content: 'Delete. Already included or otherwise fixed in %1%.'
+
+    - &alsoUseX
+      type: say
+      content: 'It''s highly recommended that you also use %1%.'
+
+    - &compatIssuesWithX
+      type: say
+      content: 'This plugin has compatibility issues with %1%. For more information, read this mod''s compatibility notes.'
+
+    - &compatNotes
+      type: say
+      content: 'It is recommended that you read this mod''s [Compatibility Notes](%1%).'
+
+    - &compatPatch
+      type: say
+      content: 'It is recommended that you check the following compatibility patch compilation for this mod: %1%'
+
+    - &compatPatchForX
+      type: say
+      content: 'It is recommended that you check the following compatibility patch compilation for %1%: %2%'
+
+    - &corrupt
+      type: warn
+      content: 'This file is corrupt and should not be used.'
+
+    - &deactivateAfterCharacterCreation
+      type: say
+      content: 'Deactivate and/or uninstall this mod after character creation.'
+
+    - &deleteOrDeactivateX
+      type: error
+      content: 'Delete or deactivate. %1%'
+      subs: [ '' ]
+
+    - &deletePlugin
+      type: warn
+      content: 'When using **%1%**, it''s recommended that you deactivate or delete this ESP file but keep the resources (e.g. meshes, textures) installed with this mod.'
+
+    - &deprecated
+      type: warn
+      content: 'This file is deprecated and should no longer be used.'
+
+    - &disableAfterGeneratingXwithY
+      type: say
+      content: 'This plugin may be disabled after generating **%1%** with **%2%**.'
+
+    - &essentialFiles
+      type: warn
+      content: 'Another mod seems to be overwriting one of this mod''s essential files. Please ensure you''re using this mod''s version of %1% or a compatible version if available.'
+
+    - &includesX
+      type: say
+      content: '%1% is included with this mod.'
+
+    - &languageX
+      type: say
+      content: 'Language: %1%'
+
+    - &mainQuestCompleted
+      type: say
+      content: 'Only use this plugin once the main quest of the game has been completed.'
+
+    - &masterReassign
+      type: say
+      content: 'The **%1%** master must be reassigned to **%2%**.'
+
+    - &missingRequirementXforY
+      type: warn
+      content: 'It appears you have installed **%2%**, but some of its requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
+
+    - &missingRequirementXforPlugin
+      type: warn
+      content: 'Some of this plugin''s requirements seem to be missing. Please ensure you have correctly installed **%1%**.'
+
+    - &moddingPlugin
+      type: error
+      content: 'This plugin is a modding resource and should not be used in-game.'
+
+    - &moveXFromYToZ
+      type: say
+      content: 'Move %1% from %2% to %3%.'
+
+    - &obsolete
+      type: warn
+      content: 'Obsolete. Update to the latest version. %1%'
+      subs: [ '' ]
+
+    - &optional
+      type: say
+      content: 'This plugin is optional.'
+
+    - &patch3rdParty
+      type: say
+      content: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
+
+    - &patcherScriptAvailable
+      type: say
+      content: '%1% patcher script available here: %2%'
+
+    - &patchIncluded
+      type: say
+      content: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A compatibility patch is included with this plugin''s installer.'
+
+    - &patchOutdated
+      type: warn
+      content: 'This patch is outdated and may not be compatible with the latest version of the patched mod.'
+
+    - &patchProvided
+      type: say
+      content: 'You seem to be using **%1%**, but you have not enabled a compatibility patch for this mod. A compatibility patch is provided on this plugin''s mod page.'
+
+    - &patchUnavailable
+      type: warn
+      content: 'A patch is required to make this mod fully compatible with %1%. None is currently available for download.'
+
+    - &patchUpdateAvailable
+      type: say
+      content: 'Update Patch available: %1%'
+
+    - &renameFile
+      type: say
+      content: 'Rename this file to %1%.'
+
+    - &renameXtoY
+      type: warn
+      content: 'You need to rename %1% to %2% or this mod won''t work.'
+
+    # Useful for when a plugin needs SkyUI, but shouldn't load after it (eg. when it's a master plugin).
+    - &requiresMCM_X
+      type: warn
+      content: 'A **Mod Configuration Menu** is required for this mod to be fully functional. An **MCM** can be added by installing %1%.'
+
+    - &requiresResources
+      type: warn
+      content: 'Requires resources (e.g. meshes, textures; not plugins) from %1%.'
+
+    - &requiresX
+      type: warn
+      content: 'Requires: %1%'
+
+    - &runAnimFramework
+      type: say
+      content: 'It appears you have **%1%** installed. Remember to run **%2%** every time you have installed or uninstalled %3%, or a %3%-based mod.'
+
+    - &runxLODGen
+      type: say
+      content: 'If you add, remove, or update plugins that alter WRLD/CELL records, remember to update this module with **xLODGen**.'
+
+    - &useBashTweakInstead
+      type: say
+      content: 'A Bashed Patch tweak can be used instead of this plugin. %1%'
+      subs: [ '' ]
+      condition: 'file("Bashed Patch.*\.esp")'
+
+    - &useINITweakInstead
+      type: say
+      content: 'An INI tweak can be used instead of this plugin. %1%'
+      subs: [ '' ]
+
+    - &useInstead
+      type: warn
+      content: 'Use %1% instead.'
+
+    - &useOnlyOneX
+      type: error
+      content: 'Use only one %1%.'
+
+    - &useVersion
+      type: error
+      content: 'Use %1% version.'
+
+    - &useVersionNon
+      type: error
+      content: 'Use non-%1% version.'
+
+    - &versionOldX
+      type: say
+      content: 'It appears you do not have the latest version of %1%. Some mods may require functionality added in the latest version of %1% to work.'
+
+    - &versionPrecedence
+      type: error
+      content: 'Delete %1% from %2%. %3%''s version must take precedence.'
+
+    - &versionUpToDateX
+      type: say
+      content: 'Your %1% is up-to-date.'
+
+    - &versionXIncY
+      type: error
+      content: 'Your installed version of %1% is not compatible with your version of %2%.'
+
+    - &versionXofYorGreaterRequired
+      type: error
+      content: 'Requires version **%1%** or greater of **%2%**.'
+
+  # Cleaning Data Anchors
+  # Global Anchors
+    - &latestLOOTThread
+      type: say
+      content: '[Latest LOOT thread](%1%).'
+      subs: [ 'https://loot.github.io/latest-thread/' ]
+
+common: []
+# File Anchors
+# Sub-Anchors
+
+bash_tags: []
+
+globals:
+# Latest LOOT Thread
+  - *latestLOOTThread
+
+# Latest Version
+  # Starfield Game Runtime
+
+groups:
+  - name: &mainGroup Main Plugins
+
+  - name: &fixesGroup Fixes & Resources
+    after: [ *mainGroup ]
+
+  - name: &earlyLoadersGroup Early Loaders
+    after: [ *fixesGroup ]
+
+  - name: default
+    after: [ *earlyLoadersGroup ]
+
+  - name: &lowPriorityGroup Low Priority Overrides
+    description: 'A group for modules that must load after most other mods.'
+    after: [ default ]
+
+  - name: &racesGroup Races & Classes
+    description: 'A group for modules that modify character Races & Classes.'
+    after: [ *lowPriorityGroup ]
+
+  - name: &economyGroup Economy
+    description: 'A group for mods that alter the Economy of the game.'
+    after: [ *racesGroup ]
+
+  - name: &craftingGroup Crafting
+    description: 'A group for modules that modify or expand crafting systems.'
+    after: [ *economyGroup ]
+
+  - name: &resourcesOverhaulsGroup Resource Overhauls
+    description: 'A group for modules that overhaul resources.'
+    after: [ *craftingGroup ]
+
+  - name: &perksGroup Skills & Perks
+    description: 'A group for modules that modify or add new Skills and Perks.'
+    after: [ *resourcesOverhaulsGroup ]
+
+  - name: &gameplayGroup Gameplay Overhauls
+    description: 'A group for modules that overhauls gameplay.'
+    after: [ *perksGroup ]
+
+  - name: &coreGroup Core Mods
+    after: [ *gameplayGroup ]
+
+  - name: &altStartGroup Alternate Start
+    description: 'A group for mods that provide alternative starting choices.'
+    after: [ *coreGroup ]
+
+  - name: &followerFrameworksGroup Follower Frameworks
+    description: 'A group for mods that extend the follower system.'
+    after: [ *altStartGroup ]
+
+  - name: &cellEncZonesGroup Cell Encounter Zones
+    description: 'A group for modules that modify cell encounter zones.'
+    after: [ *followerFrameworksGroup ]
+
+  - name: &interiorLightingGroup Interior Lighting
+    description: 'A group for modules that add/remove and/or fix light bulbs in interiors.'
+    after: [ *cellEncZonesGroup ]
+
+  - name: &highPriorityGroup High Priority Overrides
+    after: [ *interiorLightingGroup ]
+
+  - name: &cellSettingsGroup Cell Settings
+    description: 'A group for modules that only modify cell settings.'
+    after: [ *highPriorityGroup ]
+
+  - name: &lightingEnhancerGroup Lighting Enhancers
+    after: [ *cellSettingsGroup ]
+
+  - name: &lateLoadersGroup Late Loaders
+    after: [ *lightingEnhancerGroup ]
+
+  - name: &lvlListsGroup Leveled List Modifiers
+    after: [ *lateLoadersGroup ]
+
+  - name: &worldSettingsGroup Worldspace Settings
+    description: 'A group for modules that need to be loaded late to preserve worldspace settings.'
+    after: [ *lvlListsGroup ]
+
+  - name: &dynamicPatchGroup Dynamic Patches
+    after: [ *worldSettingsGroup ]
+
+  - name: &lateChangesGroup Late Fixes & Changes
+    after: [ *dynamicPatchGroup ]
+
+  - name: &dynamicLODGroup Dynamic LOD
+    after: [ *lateChangesGroup ]
+
+plugins:
+###### Official Game Files ######
+  - name: 'Starfield.esm'
+    group: *mainGroup
+  - name: 'Constellation.esm'
+    group: *mainGroup
+  - name: 'OldMars.esm'
+    group: *mainGroup
+  - name: 'BlueprintShips-Starfield.esm'
+    group: *mainGroup
+
+###### Base Game Patches ######
+###### Modding Tools - Resources ######
+###### Modding Tools - Generated Files ######
+###### Resources & Frameworks ######
+###### AudioVisual ######
+###### AudioVisual - Animations & Physics ######
+###### AudioVisual - Models & Textures ######
+###### AudioVisual - Sound & Music ######
+###### AudioVisual - Water ######
+###### AudioVisual - Weather & Lighting ######
+###### Character Appearance - Body,face & hair ######
+###### Character Appearance - Children ######
+###### Character Appearance - NPCs ######
+###### Character Appearance - Presets ######
+###### Encounters - Allies ######
+###### Encounters - Enemies ######
+###### Encounters - Neutrals ######
+###### Environment, Landscape & Flora ######
+###### Gameplay ######
+###### Gameplay - Character Classes & Races ######
+###### Gameplay - Combat ######
+###### Gameplay - Crafting & Harvesting ######
+###### Gameplay - Economy & Item Balance ######
+###### Gameplay - Abilities ######
+###### Gameplay - Mount & Follower Managers ######
+###### Gameplay - NPC Balance & Distribution ######
+###### Gameplay - NPC Behaviour & Dialogue ######
+###### Gameplay - Quests ######
+###### Gameplay - Skills & Perks ######
+###### Gameplay - User Interface ######
+###### Gameplay - User Interface - Map markers ######
+###### Gameplay - User Interface - Maps ######
+###### Items ######
+###### Locations - New Lands ######
+###### Locations - New Structures & Landmarks ######
+###### Location - Overhauls ######
+###### Locations - Player Homes ######
+###### 3RD Party Patches ######
+
+###### Anything new can go after this (If you're not sure where to put it) ######
