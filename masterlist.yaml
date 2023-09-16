@@ -30,7 +30,7 @@ prelude:
 
     - &compatPatchForX
       type: say
-      content: 'It is recommended that you check the following compatibility patch compilation for {0}: %2%'
+      content: 'It is recommended that you check the following compatibility patch compilation for {0}: {1}'
 
     - &corrupt
       type: warn
@@ -55,7 +55,7 @@ prelude:
 
     - &disableAfterGeneratingXwithY
       type: say
-      content: 'This plugin may be disabled after generating **{0}** with **%2%**.'
+      content: 'This plugin may be disabled after generating **{0}** with **{1}**.'
 
     - &essentialFiles
       type: warn
@@ -75,11 +75,11 @@ prelude:
 
     - &masterReassign
       type: say
-      content: 'The **{0}** master must be reassigned to **%2%**.'
+      content: 'The **{0}** master must be reassigned to **{1}**.'
 
     - &missingRequirementXforY
       type: warn
-      content: 'It appears you have installed **%2%**, but some of its requirements seem to be missing. Please ensure you have correctly installed **{0}**.'
+      content: 'It appears you have installed **{1}**, but some of its requirements seem to be missing. Please ensure you have correctly installed **{0}**.'
 
     - &missingRequirementXforPlugin
       type: warn
@@ -91,7 +91,7 @@ prelude:
 
     - &moveXFromYToZ
       type: say
-      content: 'Move {0} from %2% to {2}.'
+      content: 'Move {0} from {1} to {2}.'
 
     - &obsolete
       type: warn
@@ -104,11 +104,11 @@ prelude:
 
     - &patch3rdParty
       type: say
-      content: 'You seem to be using **{0}**, but you have not enabled a compatibility patch for this mod. A third party patch is available here: %2%'
+      content: 'You seem to be using **{0}**, but you have not enabled a compatibility patch for this mod. A third party patch is available here: {1}'
 
     - &patcherScriptAvailable
       type: say
-      content: '{0} patcher script available here: %2%'
+      content: '{0} patcher script available here: {1}'
 
     - &patchIncluded
       type: say
@@ -136,7 +136,7 @@ prelude:
 
     - &renameXtoY
       type: warn
-      content: 'You need to rename {0} to %2% or this mod won''t work.'
+      content: 'You need to rename {0} to {1} or this mod won''t work.'
 
     # Useful for when a plugin needs SkyUI, but shouldn't load after it (eg. when it's a master plugin).
     - &requiresMCM_X
@@ -153,7 +153,7 @@ prelude:
 
     - &runAnimFramework
       type: say
-      content: 'It appears you have **{0}** installed. Remember to run **%2%** every time you have installed or uninstalled {2}, or a {2}-based mod.'
+      content: 'It appears you have **{0}** installed. Remember to run **{1}** every time you have installed or uninstalled {2}, or a {2}-based mod.'
 
     - &runxLODGen
       type: say
@@ -192,7 +192,7 @@ prelude:
 
     - &versionPrecedence
       type: error
-      content: 'Delete {0} from %2%. %3%''s version must take precedence.'
+      content: 'Delete {0} from {1}. {2}''s version must take precedence.'
 
     - &versionUpToDateX
       type: say
@@ -200,11 +200,11 @@ prelude:
 
     - &versionXIncY
       type: error
-      content: 'Your installed version of {0} is not compatible with your version of %2%.'
+      content: 'Your installed version of {0} is not compatible with your version of {1}.'
 
     - &versionXofYorGreaterRequired
       type: error
-      content: 'Requires version **{0}** or greater of **%2%**.'
+      content: 'Requires version **{0}** or greater of **{1}**.'
 
   # Cleaning Data Anchors
   # Global Anchors
