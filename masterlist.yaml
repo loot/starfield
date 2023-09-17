@@ -265,77 +265,20 @@ groups:
     description: 'A group for modules that must load after most other mods.'
     after: [ default ]
 
-  - name: &racesGroup Races & Classes
-    description: 'A group for modules that modify character Races & Classes.'
+  - name: &coreGroup Core Mods
     after: [ *lowPriorityGroup ]
 
-  - name: &economyGroup Economy
-    description: 'A group for mods that alter the Economy of the game.'
-    after: [ *racesGroup ]
-
-  - name: &craftingGroup Crafting
-    description: 'A group for modules that modify or expand crafting systems.'
-    after: [ *economyGroup ]
-
-  - name: &resourcesOverhaulsGroup Resource Overhauls
-    description: 'A group for modules that overhaul resources.'
-    after: [ *craftingGroup ]
-
-  - name: &perksGroup Skills & Perks
-    description: 'A group for modules that modify or add new Skills and Perks.'
-    after: [ *resourcesOverhaulsGroup ]
-
-  - name: &gameplayGroup Gameplay Overhauls
-    description: 'A group for modules that overhauls gameplay.'
-    after: [ *perksGroup ]
-
-  - name: &coreGroup Core Mods
-    after: [ *gameplayGroup ]
-
-  - name: &altStartGroup Alternate Start
-    description: 'A group for mods that provide alternative starting choices.'
+  - name: &highPriorityGroup High Priority Overrides
     after: [ *coreGroup ]
 
-  - name: &followerFrameworksGroup Follower Frameworks
-    description: 'A group for mods that extend the follower system.'
-    after: [ *altStartGroup ]
-
-  - name: &cellEncZonesGroup Cell Encounter Zones
-    description: 'A group for modules that modify cell encounter zones.'
-    after: [ *followerFrameworksGroup ]
-
-  - name: &interiorLightingGroup Interior Lighting
-    description: 'A group for modules that add/remove and/or fix light bulbs in interiors.'
-    after: [ *cellEncZonesGroup ]
-
-  - name: &highPriorityGroup High Priority Overrides
-    after: [ *interiorLightingGroup ]
-
-  - name: &cellSettingsGroup Cell Settings
-    description: 'A group for modules that only modify cell settings.'
+  - name: &lateLoadersGroup Late Loaders
     after: [ *highPriorityGroup ]
 
-  - name: &lightingEnhancerGroup Lighting Enhancers
-    after: [ *cellSettingsGroup ]
-
-  - name: &lateLoadersGroup Late Loaders
-    after: [ *lightingEnhancerGroup ]
-
-  - name: &lvlListsGroup Leveled List Modifiers
-    after: [ *lateLoadersGroup ]
-
-  - name: &worldSettingsGroup Worldspace Settings
-    description: 'A group for modules that need to be loaded late to preserve worldspace settings.'
-    after: [ *lvlListsGroup ]
-
   - name: &dynamicPatchGroup Dynamic Patches
-    after: [ *worldSettingsGroup ]
+    after: [ *lateLoadersGroup ]
 
   - name: &lateChangesGroup Late Fixes & Changes
     after: [ *dynamicPatchGroup ]
-
-  - name: &dynamicLODGroup Dynamic LOD
-    after: [ *lateChangesGroup ]
 
 plugins:
 ###### Official Game Files ######
