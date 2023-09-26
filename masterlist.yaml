@@ -213,6 +213,14 @@ prelude:
       content: '[Latest LOOT thread]({0}).'
       subs: [ 'https://loot.github.io/latest-thread/' ]
 
+    - &scriptExtenderMissing
+      type: error
+      content: 'You have installed an {0} plugin but {0} was not found! See {0} download page: {1}.'
+      subs:
+        - 'SFSE'
+        - '[Starfield Script Extender](https://sfse.silverlock.org)'
+      condition: 'file("SFSE/Plugins/([^\.]+\.dll)") and not file("../sfse_loader.exe")'
+
 common: []
 # File Anchors
 # Sub-Anchors
@@ -241,13 +249,20 @@ globals:
     subs: [ '**Starfield**' ]
     condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.7.33.0", >=)'
   # SFSE
-  # https://github.com/ianpatt/sfse
   - <<: *versionOldX
     subs: [ '**[SFSE](https://www.nexusmods.com/starfield/mods/106/)**' ]
     condition: 'file("../sfse_loader.exe") and version("../sfse_loader.exe", "0.0.1.3", <) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.7.33.0", >=)'
   - <<: *versionUpToDateX
     subs: [ '**SFSE**' ]
     condition: 'version("../sfse_loader.exe", "0.0.1.3", >=) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.7.33.0", >=)'
+
+# SFSE
+  # Missing
+  - <<: *scriptExtenderMissing
+    subs:
+      - 'SFSE'
+      - '[Starfield Script Extender](https://sfse.silverlock.org)'
+    condition: 'readable("../Starfield.exe") and not file("../sfse_loader.exe") and file("SFSE/Plugins/([^\.]+\.dll)")'
 
 groups:
   - name: &mainGroup Main Plugins
