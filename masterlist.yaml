@@ -305,8 +305,16 @@ plugins:
     group: *mainGroup
   - name: 'Constellation.esm'
     group: *mainGroup
+    clean:
+      # v1.7.36.0
+      - crc: 0x0A4AA7A3
+        util: 'SF1Edit v4.1.5 EXPERIMENTAL'
   - name: 'OldMars.esm'
     group: *mainGroup
+    clean:
+      # v1.7.36.0
+      - crc: 0x374960D0
+        util: 'SF1Edit v4.1.5 EXPERIMENTAL'
   - name: 'BlueprintShips-Starfield.esm'
     group: *mainGroup
 
