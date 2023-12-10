@@ -321,6 +321,15 @@ plugins:
 ###### Resources & Frameworks ######
 ###### AudioVisual ######
 ###### AudioVisual - Animations & Physics ######
+  - name: 'MoreDramaticGravJumps.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/starfield/mods/2413/'
+        name: 'More Dramatic Grav Jumps'
+  - name: 'MoreDramaticGravJumps.esp'
+    msg:
+      - <<: *obsolete
+        subs: [ '[More Dramatic Grav Jumps .esm Plugin](https://www.nexusmods.com/starfield/mods/2413/)' ]
+
 ###### AudioVisual - Models & Textures ######
 ###### AudioVisual - Sound & Music ######
 ###### AudioVisual - Water ######
