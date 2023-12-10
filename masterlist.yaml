@@ -344,7 +344,7 @@ plugins:
         name: 'Captain''s Locker Unlimited'
     msg:
       - <<: *corrupt
-        condition: 'checksum("CaptLockerUnlimited.esp", F41DB3F5)
+        condition: 'checksum("CaptLockerUnlimited.esp", F41DB3F5)'
 
 ###### Gameplay - Abilities ######
 ###### Gameplay - Mount & Follower Managers ######
