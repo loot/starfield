@@ -310,6 +310,12 @@ plugins:
     group: *mainGroup
 
 ###### Base Game Patches ######
+  - name: 'StarfieldCommunityPatch.esm'
+    url:
+      - link: 'https://www.nexusmods.com/starfield/mods/1/'
+        name: 'Starfield Community Patch (Nexus Mods)'
+    group: *fixesGroup
+
 ###### Modding Tools - Resources ######
 ###### Modding Tools - Generated Files ######
 ###### Resources & Frameworks ######
