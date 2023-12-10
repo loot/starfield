@@ -338,6 +338,14 @@ plugins:
 ###### Gameplay - Combat ######
 ###### Gameplay - Crafting & Harvesting ######
 ###### Gameplay - Economy & Item Balance ######
+  - name: 'CaptLockerUnlimited.esp'
+    url:
+      - link: 'https://www.nexusmods.com/starfield/mods/911/'
+        name: 'Captain''s Locker Unlimited'
+    msg:
+      - <<: *corrupt
+        condition: 'checksum("CaptLockerUnlimited.esp", F41DB3F5)'
+
 ###### Gameplay - Abilities ######
 ###### Gameplay - Mount & Follower Managers ######
 ###### Gameplay - NPC Balance & Distribution ######
