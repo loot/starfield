@@ -345,6 +345,16 @@ plugins:
 ###### Gameplay - Character Classes & Races ######
 ###### Gameplay - Combat ######
 ###### Gameplay - Crafting & Harvesting ######
+  - name: 'legendaries.es[mp]'
+    url:
+      - link: 'https://www.nexusmods.com/starfield/mods/1379/'
+        name: 'Legendary Modifications'
+  - name: 'legendaries.esp'
+    msg:
+      - <<: *obsolete
+        subs: [ '[Legendary Modifications .esm Plugin](https://www.nexusmods.com/starfield/mods/1379/)' ]
+        condition: 'checksum("legendaries.esp", 333DF58A) or checksum("legendaries.esp", 62E07118)'
+
 ###### Gameplay - Economy & Item Balance ######
   - name: 'CaptLockerUnlimited.esp'
     url:
