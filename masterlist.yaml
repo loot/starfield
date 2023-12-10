@@ -334,6 +334,14 @@ plugins:
 ###### Encounters - Neutrals ######
 ###### Environment, Landscape & Flora ######
 ###### Gameplay ######
+  - name: 'cargo2x.esp'
+    url:
+      - link: 'https://www.nexusmods.com/starfield/mods/1049/'
+        name: 'CargoPlus'
+    msg:
+      - <<: *corrupt
+        condition: 'checksum("cargo2x.esp", A5257F3C)'
+
 ###### Gameplay - Character Classes & Races ######
 ###### Gameplay - Combat ######
 ###### Gameplay - Crafting & Harvesting ######
