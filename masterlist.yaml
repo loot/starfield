@@ -227,6 +227,10 @@ prelude:
 
 common: []
 # File Anchors
+  - &SFSE
+    name: '../sfse_loader.exe'
+    display: '[Starfield Script Extender](https://sfse.silverlock.org/)'
+
 # Sub-Anchors
 
 bash_tags: []
