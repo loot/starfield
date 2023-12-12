@@ -225,7 +225,7 @@ prelude:
         - '[Starfield Script Extender](https://sfse.silverlock.org)'
       condition: 'file("SFSE/Plugins/([^\.]+\.dll)") and not file("../sfse_loader.exe")'
 
-common: []
+common:
 # File Anchors
   - &SFSE
     name: '../sfse_loader.exe'
