@@ -316,6 +316,12 @@ plugins:
         util: 'SF1Edit v4.1.5 EXPERIMENTAL'
   - name: 'BlueprintShips-Starfield.esm'
     group: *mainGroup
+  - name: 'SFBGS006.esm'
+    group: *mainGroup
+  - name: 'SFBGS007.esm'
+    group: *mainGroup
+  - name: 'SFBGS008.esm'
+    group: *mainGroup
 
 ###### Base Game Patches ######
   - name: 'StarfieldCommunityPatch.esm'
