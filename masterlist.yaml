@@ -247,17 +247,17 @@ globals:
   # Starfield Game Runtime
   - <<: *versionOldX
     subs: [ '**Starfield**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.11.36.0", <)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.30.0", <)'
   - <<: *versionUpToDateX
     subs: [ '**Starfield**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.11.36.0", >=)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.30.0", >=)'
   # SFSE
   - <<: *versionOldX
     subs: [ '**[SFSE](https://www.nexusmods.com/starfield/mods/106/)**' ]
-    condition: 'file("../sfse_loader.exe") and version("../sfse_1_11_36.dll", "0.0.2.7", <) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.11.36.0", >=)'
+    condition: 'file("../sfse_loader.exe") and version("../sfse_1_11_36.dll", "0.0.2.7", <) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.30.0", >=)'
   - <<: *versionUpToDateX
     subs: [ '**SFSE**' ]
-    condition: 'version("../sfse_1_11_36.dll", "0.0.2.7", >=) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.11.36.0", >=)'
+    condition: 'version("../sfse_1_11_36.dll", "0.0.2.7", >=) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.30.0", >=)'
 
 # SFSE
   # Missing
@@ -304,17 +304,11 @@ plugins:
     group: *mainGroup
   - name: 'Constellation.esm'
     group: *mainGroup
-    clean:
-      # v1.7.36.0
-      - crc: 0x0A4AA7A3
-        util: 'SF1Edit v4.1.5 EXPERIMENTAL'
   - name: 'OldMars.esm'
     group: *mainGroup
-    clean:
-      # v1.7.36.0
-      - crc: 0x374960D0
-        util: 'SF1Edit v4.1.5 EXPERIMENTAL'
   - name: 'BlueprintShips-Starfield.esm'
+    group: *mainGroup
+  - name: 'SFBGS003.esm'
     group: *mainGroup
   - name: 'SFBGS006.esm'
     group: *mainGroup
