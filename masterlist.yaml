@@ -308,6 +308,8 @@ plugins:
     group: *mainGroup
   - name: 'BlueprintShips-Starfield.esm'
     group: *mainGroup
+  - name: 'SFBGS003.esm'
+    group: *mainGroup
   - name: 'SFBGS006.esm'
     group: *mainGroup
   - name: 'SFBGS007.esm'
