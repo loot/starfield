@@ -212,6 +212,10 @@ prelude:
 
   # Cleaning Data Anchors
   # Global Anchors
+    - &filenameExtension
+      type: error
+      content: '{0} does not support the usage of **{1}** plugins ingame, but your load order contains such plugins. In order to avoid irreversible damage to your game, it is recommended to not use **{1}** plugins.'
+
     - &incompatible
       type: error
       content: '{0} is incompatible with {1}, but both are present.'
@@ -240,6 +244,20 @@ common:
 bash_tags: []
 
 globals:
+# Filename extension .esp
+  - <<: *filenameExtension
+    subs:
+      - 'Starfield'
+      - '.esp'
+    condition: 'file("([^\.]+\.esp)")'
+
+# Filename extension .esl
+  - <<: *filenameExtension
+    subs:
+      - 'Starfield'
+      - '.esl'
+    condition: 'file("([^\.]+\.esl)")'
+
 # Latest LOOT Thread
   - *latestLOOTThread
 
