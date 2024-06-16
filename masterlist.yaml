@@ -244,14 +244,14 @@ common:
 bash_tags: []
 
 globals:
-# File extension .esp
+# Filename extension .esp
   - <<: *filenameExtension
     subs:
       - 'Starfield'
       - '.esp'
     condition: 'file("([^\.]+\.esp)")'
 
-# File extension .esl
+# Filename extension .esl
   - <<: *filenameExtension
     subs:
       - 'Starfield'
