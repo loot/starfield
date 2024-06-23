@@ -159,10 +159,6 @@ prelude:
       type: say
       content: 'If you add, remove, or update plugins that alter WRLD/CELL records, remember to update this module with **xLODGen**.'
 
-    - &supersede
-      type: warn
-      content: 'You seem to be using **{0}**, but it has been superseded. It is recommended that you use **{1}** instead.'
-
     - &unsupportedChangeVerified
       type: warn
       content: 'This plugin has been changed from **{0}** to **{1}**.'
@@ -237,6 +233,10 @@ prelude:
         - 'SFSE'
         - '[Starfield Script Extender](https://sfse.silverlock.org)'
       condition: 'file("SFSE/Plugins/([^\.]+\.dll)") and not file("../sfse_loader.exe")'
+
+    - &supersede
+      type: warn
+      content: 'You seem to be using **{0}**, but it has been superseded. It is recommended that you use **{1}** instead.'
 
 common:
 # File Anchors
