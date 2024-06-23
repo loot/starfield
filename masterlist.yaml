@@ -213,6 +213,11 @@ prelude:
 
   # Cleaning Data Anchors
   # Global Anchors
+    - &changeUnsupported
+      type: say
+      content: 'Changing the type of an existing plugin isn''t supported. Additional details are provided [here]({0}).'
+      subs: [ 'https://loot.github.io/docs/help/Changing-Plugin-Types-In-Starfield.html' ]
+
     - &filenameExtension
       type: error
       content: '{0} does not support the usage of **{1}** plugins ingame, but your load order contains such plugins. In order to avoid irreversible damage to your game, it is recommended to not use **{1}** plugins.'
@@ -249,6 +254,9 @@ common:
 bash_tags: []
 
 globals:
+# Unsupported Plugin type change
+  - *changeUnsupported
+
 # Filename extension .esp
   - <<: *filenameExtension
     subs:
