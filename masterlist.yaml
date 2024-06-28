@@ -350,6 +350,8 @@ plugins:
   - name: 'SFBGS008.esm'
     group: *mainGroup
 
+###### Official BGS Creations ######
+###### Verified Creations ######
 ###### Base Game Patches ######
   - name: 'StarfieldCommunityPatch.esm'
     url:
