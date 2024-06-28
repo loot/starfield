@@ -355,6 +355,8 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/starfield/mods/1/'
         name: 'Starfield Community Patch (Nexus Mods)'
+      - link: 'https://creations.bethesda.net/en/starfield/details/a11a0cdf-5abb-4a59-9e12-e261e5aae8d5/Starfield_Community_Patch/'
+        name: 'Starfield Community Patch (Bethesda.net Mods)'
     group: *fixesGroup
 
   - name: 'unofficial starfield patch.esm'
