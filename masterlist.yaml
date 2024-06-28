@@ -351,6 +351,31 @@ plugins:
     group: *mainGroup
 
 ###### Official BGS Creations ######
+  - name: 'sfbgs00a_a.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/31ccf130-4852-417b-842a-9d82672028e4/Skin__Blackout__Drum_Beat_/'
+        name: 'Blackout Drumbeat Skin (Bethesda.net Mods)'
+
+  - name: 'sfbgs00e.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/bdf19afb-2be7-43ad-b023-9c310e3602d9/Constellation_Plushie_Set/'
+        name: 'Constellation Plushie Set (Bethesda.net Mods)'
+
+  - name: 'sfbgs021.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/e8ff65fc-7c13-44b3-b8a5-27df6b28007d/Observatory/'
+        name: 'Observatory (Bethesda.net Mods)'
+
+  - name: 'sfbgs023.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/beefc7ae-59f4-4934-b2a5-d04e5264f029/Starborn_Gravis_Suit/'
+        name: 'Starborn Gravis Suit (Bethesda.net Mods)'
+
+  - name: 'sfta01.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/4bf1a31f-46d5-47bf-a5e6-d0f9e2496d0c/Trackers_Alliance__The_Vulture/'
+        name: 'Trackers Alliance: The Vulture (Bethesda.net Mods)'
+
 ###### Verified Creations ######
 ###### Base Game Patches ######
   - name: 'StarfieldCommunityPatch.esm'
