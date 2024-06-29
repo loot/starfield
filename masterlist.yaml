@@ -77,6 +77,10 @@ prelude:
       type: say
       content: 'The **{0}** master must be reassigned to **{1}**.'
 
+    - &mismatchedFormIDs
+      type: error
+      content: 'This plugin is a **{0}**, but it contains FormIDs that do not match this type of Master. Using this plugin would have unpredictable consequences for your game and is therefore not recommended.'
+
     - &missingRequirementXforY
       type: warn
       content: 'It appears you have installed **{1}**, but some of its requirements seem to be missing. Please ensure you have correctly installed **{0}**.'
