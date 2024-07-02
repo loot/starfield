@@ -360,10 +360,25 @@ plugins:
       - link: 'https://creations.bethesda.net/en/starfield/details/31ccf130-4852-417b-842a-9d82672028e4/Skin__Blackout__Drum_Beat_/'
         name: 'Blackout Drumbeat Skin'
 
+  - name: 'sfbgs00a_d.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/2880d357-3084-447d-a712-c9317eac56d1/Blackout_Shotty_Skin/'
+        name: 'Blackout Shotty Skin'
+
   - name: 'sfbgs00e.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/bdf19afb-2be7-43ad-b023-9c310e3602d9/Constellation_Plushie_Set/'
         name: 'Constellation Plushie Set'
+
+  - name: 'sfbgs01c.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/f84790ea-caeb-4a73-9d06-d4db254dc37d/Water_Cooled_Miners__39__Outfit/'
+        name: 'Water-Cooled Miners'' Outfit'
+
+  - name: 'sfbgs02a_a.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/128b6982-590d-47eb-b8cd-b20917b2de13/Allied_Desert_Camo_Skin_Pack/'
+        name: 'Allied Desert Camo Skin Pack'
 
   - name: 'sfbgs009.esm'
     url:
