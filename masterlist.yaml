@@ -237,6 +237,10 @@ prelude:
       content: '[Latest LOOT thread]({0}).'
       subs: [ 'https://loot.github.io/latest-thread/' ]
 
+    - &pluginEnabler
+      type: warn
+      content: 'You have installed {0}, but since {1} version {2} this is no longer needed.'
+
     - &scriptExtenderMissing
       type: error
       content: 'You have installed an {0} plugin but {0} was not found! See {0} download page: {1}.'
@@ -279,6 +283,14 @@ globals:
 
 # Latest LOOT Thread
   - *latestLOOTThread
+
+# Plugins.txt Enabler
+  - <<: *pluginEnabler
+    subs:
+      - '[Plugins.txt Enabler](https://www.nexusmods.com/starfield/mods/4157/)'
+      - 'Starfield'
+      - '1.12.30.0'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.30.0", >=) and (file("SFSE/Plugins/SFPluginsTxtEnabler.dll") or file("../SFPluginsTxtEnabler.asi"))'
 
 # Latest Version
   # Starfield Game Runtime
