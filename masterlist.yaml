@@ -374,46 +374,55 @@ plugins:
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/31ccf130-4852-417b-842a-9d82672028e4/Skin__Blackout__Drum_Beat_/'
         name: 'Blackout Drumbeat Skin'
+    group: *bgsCreationsGroup
 
   - name: 'sfbgs00a_d.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/2880d357-3084-447d-a712-c9317eac56d1/Blackout_Shotty_Skin/'
         name: 'Blackout Shotty Skin'
+    group: *bgsCreationsGroup
 
   - name: 'sfbgs00e.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/bdf19afb-2be7-43ad-b023-9c310e3602d9/Constellation_Plushie_Set/'
         name: 'Constellation Plushie Set'
+    group: *bgsCreationsGroup
 
   - name: 'sfbgs01c.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/f84790ea-caeb-4a73-9d06-d4db254dc37d/Water_Cooled_Miners__39__Outfit/'
         name: 'Water-Cooled Miners'' Outfit'
+    group: *bgsCreationsGroup
 
   - name: 'sfbgs02a_a.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/128b6982-590d-47eb-b8cd-b20917b2de13/Allied_Desert_Camo_Skin_Pack/'
         name: 'Allied Desert Camo Skin Pack'
+    group: *bgsCreationsGroup
 
   - name: 'sfbgs009.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/07fe73ab-6edb-471d-8769-7bff25ffeb95/Ancient_Mariner_Module/'
         name: 'Ancient Mariner Module'
+    group: *bgsCreationsGroup
 
   - name: 'sfbgs021.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/e8ff65fc-7c13-44b3-b8a5-27df6b28007d/Observatory/'
         name: 'Observatory'
+    group: *bgsCreationsGroup
 
   - name: 'sfbgs023.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/beefc7ae-59f4-4934-b2a5-d04e5264f029/Starborn_Gravis_Suit/'
         name: 'Starborn Gravis Suit'
+    group: *bgsCreationsGroup
 
   - name: 'sfta01.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/4bf1a31f-46d5-47bf-a5e6-d0f9e2496d0c/Trackers_Alliance__The_Vulture/'
         name: 'Trackers Alliance: The Vulture'
+    group: *bgsCreationsGroup
 
 ###### Verified Creations ######
 ###### Base Game Patches ######
