@@ -319,8 +319,11 @@ globals:
 groups:
   - name: &mainGroup Main Plugins
 
-  - name: &fixesGroup Fixes & Resources
+  - name: &bgsCreationsGroup Bethesda Game Studios Creations
     after: [ *mainGroup ]
+
+  - name: &fixesGroup Fixes & Resources
+    after: [ *bgsCreationsGroup ]
 
   - name: &earlyLoadersGroup Early Loaders
     after: [ *fixesGroup ]
