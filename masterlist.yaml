@@ -382,6 +382,12 @@ plugins:
         name: 'Blackout Shotty Skin'
     group: *bgsCreationsGroup
 
+  - name: 'sfbgs00a_f.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/c5bbdd20-29a6-4508-9dea-24e864dc255b/Blackout_Equinox_Skin/'
+        name: 'Blackout Equinox Skin'
+    group: *bgsCreationsGroup
+
   - name: 'sfbgs00e.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/bdf19afb-2be7-43ad-b023-9c310e3602d9/Constellation_Plushie_Set/'
