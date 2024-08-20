@@ -390,6 +390,12 @@ plugins:
         name: 'Blackout Equinox Skin'
     group: *bgsCreationsGroup
 
+  - name: 'sfbgs00a_j.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/5a8a341a-03a9-43b6-aa11-3d25231cd3ee/Blackout_Kodama_Skin/'
+        name: 'Blackout Kodama Skin'
+    group: *bgsCreationsGroup
+
   - name: 'sfbgs00e.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/bdf19afb-2be7-43ad-b023-9c310e3602d9/Constellation_Plushie_Set/'
