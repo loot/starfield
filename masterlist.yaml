@@ -296,17 +296,17 @@ globals:
   # Starfield Game Runtime
   - <<: *versionOldX
     subs: [ '**Starfield**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.36.0", <)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.13.61.0", <)'
   - <<: *versionUpToDateX
     subs: [ '**Starfield**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.36.0", >=)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.13.61.0", >=)'
   # SFSE
   - <<: *versionOldX
     subs: [ '**[SFSE](https://www.nexusmods.com/starfield/mods/106/)**' ]
-    condition: 'file("../sfse_loader.exe") and version("../sfse_1_12_36.dll", "0.0.2.10", <) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.36.0", >=)'
+    condition: 'file("../sfse_loader.exe") and file("../sfse_1_([7-9]|1[0-3])_\d+\.dll") and version("../sfse_1_13_61.dll", "0.0.2.11", <) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.13.61.0", >=)'
   - <<: *versionUpToDateX
     subs: [ '**SFSE**' ]
-    condition: 'version("../sfse_1_12_36.dll", "0.0.2.10", >=) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.36.0", >=)'
+    condition: 'version("../sfse_1_13_61.dll", "0.0.2.11", >=) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.13.61.0", >=)'
 
 # SFSE
   # Missing
