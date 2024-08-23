@@ -438,6 +438,12 @@ plugins:
         name: 'Trackers Alliance: The Vulture'
     group: *bgsCreationsGroup
 
+  - name: 'sfbgs00b.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/1106af41-fac5-431e-aa1a-163b3e5d2892/Escape/'
+        name: 'Escape'
+    group: *bgsCreationsGroup
+
 ###### Verified Creations ######
 ###### Base Game Patches ######
   - name: 'StarfieldCommunityPatch.esm'
