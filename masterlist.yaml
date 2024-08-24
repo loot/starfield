@@ -408,6 +408,12 @@ plugins:
         name: 'Constellation Plushie Set'
     group: *bgsCreationsGroup
 
+  - name: 'sfbgs00f_a.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/6cb482a0-9fb6-48f5-ad69-c4c40d830bd5/CombaTech_Digital_Camo_Skin_Pack/'
+        name: 'CombaTech Digital Camo Skin Pack'
+    group: *bgsCreationsGroup
+
   - name: 'sfbgs01c.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/f84790ea-caeb-4a73-9d06-d4db254dc37d/Water_Cooled_Miners__39__Outfit/'
@@ -418,6 +424,12 @@ plugins:
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/128b6982-590d-47eb-b8cd-b20917b2de13/Allied_Desert_Camo_Skin_Pack/'
         name: 'Allied Desert Camo Skin Pack'
+    group: *bgsCreationsGroup
+
+  - name: 'sfbgs02b_a.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/4d2573b0-b5fb-4e18-ad2a-eb93243e9338/Allied_Winter_Camo_Skin_Pack/'
+        name: 'Allied Winter Camo Skin Pack'
     group: *bgsCreationsGroup
 
   - name: 'sfbgs009.esm'
@@ -436,6 +448,12 @@ plugins:
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/beefc7ae-59f4-4934-b2a5-d04e5264f029/Starborn_Gravis_Suit/'
         name: 'Starborn Gravis Suit'
+    group: *bgsCreationsGroup
+
+  - name: 'sfbgs031.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/a4c2c041-fcd5-455b-a8a4-41e106ba3de1/Creature_Plushie_Set/'
+        name: 'Creature Plushie Set'
     group: *bgsCreationsGroup
 
   - name: 'sfta01.esm'
