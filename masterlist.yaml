@@ -401,7 +401,7 @@ plugins:
       - link: 'https://creations.bethesda.net/en/starfield/details/1106af41-fac5-431e-aa1a-163b3e5d2892/Escape/'
         name: 'Escape'
     group: *bgsCreationsGroup
-    
+
   - name: 'sfbgs00e.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/bdf19afb-2be7-43ad-b023-9c310e3602d9/Constellation_Plushie_Set/'
@@ -443,8 +443,6 @@ plugins:
       - link: 'https://creations.bethesda.net/en/starfield/details/4bf1a31f-46d5-47bf-a5e6-d0f9e2496d0c/Trackers_Alliance__The_Vulture/'
         name: 'Trackers Alliance: The Vulture'
     group: *bgsCreationsGroup
-
-
 
 ###### Verified Creations ######
 ###### Base Game Patches ######
