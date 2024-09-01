@@ -517,6 +517,14 @@ plugins:
 
 ###### Gameplay - Character Classes & Races ######
 ###### Gameplay - Combat ######
+  - name: 'RealisticDamageMultipliers.esm'
+    url:
+      - link: 'https://www.nexusmods.com/starfield/mods/188/'
+        name: 'Realistic Damage Multipliers'
+    msg:
+      - <<: *corrupt
+        condition: 'checksum("RealisticDamageMultipliers.esm", CBC568FF)'
+
 ###### Gameplay - Crafting & Harvesting ######
   - name: 'legendaries.es[mp]'
     url:
