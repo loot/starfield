@@ -384,6 +384,12 @@ plugins:
         name: 'Blackout Shotty Skin'
     group: *bgsCreationsGroup
 
+  - name: 'sfbgs00a_e.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/0dd23a7f-3e76-491c-b879-4f3054708b1f/Blackout_Big_Bang_Skin/'
+        name: 'Blackout Big Bang Skin'
+    group: *bgsCreationsGroup
+
   - name: 'sfbgs00a_f.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/c5bbdd20-29a6-4508-9dea-24e864dc255b/Blackout_Equinox_Skin/'
