@@ -396,6 +396,12 @@ plugins:
         name: 'Blackout Equinox Skin'
     group: *bgsCreationsGroup
 
+  - name: 'sfbgs00a_g.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/044b2aa7-42f9-4ba6-93a8-2265d4008641/Blackout_Grendel_Skin/'
+        name: 'Blackout Grendel Skin'
+    group: *bgsCreationsGroup
+
   - name: 'sfbgs00a_j.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/5a8a341a-03a9-43b6-aa11-3d25231cd3ee/Blackout_Kodama_Skin/'
