@@ -426,6 +426,12 @@ plugins:
         name: 'CombaTech Digital Camo Skin Pack'
     group: *bgsCreationsGroup
 
+  - name: 'sfbgs01b.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/37bf9b4b-f281-4460-a9a5-c67bf87139fa/Shattered_Space_Plushie_Set/'
+        name: 'Shattered Space Plushie Set'
+    group: *bgsCreationsGroup
+
   - name: 'sfbgs01c.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/f84790ea-caeb-4a73-9d06-d4db254dc37d/Water_Cooled_Miners__39__Outfit/'
