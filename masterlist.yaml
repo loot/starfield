@@ -462,6 +462,12 @@ plugins:
         name: 'Starborn Gravis Suit'
     group: *bgsCreationsGroup
 
+  - name: 'sfbgs024.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/66311a58-23a4-4950-9b25-d70f693fadc0/Civilian_Survival_Suit/'
+        name: 'Civilian Survival Suit'
+    group: *bgsCreationsGroup
+
   - name: 'sfbgs031.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/a4c2c041-fcd5-455b-a8a4-41e106ba3de1/Creature_Plushie_Set/'
