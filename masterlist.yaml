@@ -371,6 +371,7 @@ plugins:
   - name: 'SFBGS008.esm'
     group: *mainGroup
 
+###### Official DLC ######
 ###### Official BGS Creations ######
   - name: 'sfbgs00a_a.esm'
     url:
