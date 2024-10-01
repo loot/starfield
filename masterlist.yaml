@@ -372,6 +372,12 @@ plugins:
     group: *mainGroup
 
 ###### Official DLC ######
+  - name: 'ShatteredSpace.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/b6b52ca2-3f1f-4316-bef8-dcb0bb2dcc32/Starfield__Shattered_Space/'
+        name: 'Starfield: Shattered Space'
+    group: *mainGroup
+
 ###### Official BGS Creations ######
   - name: 'sfbgs00a_a.esm'
     url:
