@@ -409,6 +409,12 @@ plugins:
         name: 'Blackout Grendel Skin'
     group: *bgsCreationsGroup
 
+  - name: 'sfbgs00a_i.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/3301d73c-b6dd-4fa9-ad43-9b9094fb8bc3/Blackout_Hard_Target_Skin/'
+        name: 'Blackout Hard Target Skin'
+    group: *bgsCreationsGroup
+
   - name: 'sfbgs00a_j.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/5a8a341a-03a9-43b6-aa11-3d25231cd3ee/Blackout_Kodama_Skin/'
