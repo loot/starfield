@@ -509,13 +509,27 @@ plugins:
         name: 'Starfield Community Patch (Bethesda.net Mods)'
     group: *fixesGroup
 
-  - name: 'unofficial starfield patch.esm'
+  - name: 'unofficial starfield patch( - blueprint edits)?\.esm'
     url:
       - link: 'https://www.nexusmods.com/starfield/mods/143/'
         name: 'Unofficial Starfield Patch (Nexus Mods)'
       - link: 'https://creations.bethesda.net/en/starfield/details/363ee78b-1735-4402-b3db-24236d060f7f/Unofficial_Starfield_Patch/'
         name: 'Unofficial Starfield Patch (Bethesda.net Mods)'
+
+  - name: 'unofficial starfield patch.esm'
     group: *fixesGroup
+
+  - name: 'unofficial starfield patch - blueprint edits.esm'
+    group: *lateChangesGroup
+
+  - name: 'unofficial shattered space patch.esm'
+    url:
+      - link: 'https://www.nexusmods.com/starfield/mods/143/'
+        name: 'Unofficial Shattered Space Patch (Nexus Mods)'
+      - link: 'https://creations.bethesda.net/en/starfield/details/b752542d-e488-437d-8c99-a3e5a19cad64/Unofficial_Shattered_Space_Patch/'
+        name: 'Unofficial Shattered Space Patch (Bethesda.net Mods)'
+    group: *fixesGroup
+    after: [ 'unofficial starfield patch.esm' ]
 
 ###### Modding Tools - Resources ######
 ###### Modding Tools - Generated Files ######
