@@ -427,6 +427,12 @@ plugins:
         name: 'Escape'
     group: *bgsCreationsGroup
 
+  - name: 'sfbgs00c.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/daa65855-1e97-495d-aa7d-fd675e40024c/The_Perfect_Recipe/'
+        name: 'The Perfect Recipe'
+    group: *bgsCreationsGroup
+
   - name: 'sfbgs00e.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/bdf19afb-2be7-43ad-b023-9c310e3602d9/Constellation_Plushie_Set/'
@@ -467,6 +473,12 @@ plugins:
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/07fe73ab-6edb-471d-8769-7bff25ffeb95/Ancient_Mariner_Module/'
         name: 'Ancient Mariner Module'
+    group: *bgsCreationsGroup
+
+  - name: 'sfbgs019.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/e3295393-57db-47ba-91e4-2ba74133856a/Deimog/'
+        name: 'Deimog'
     group: *bgsCreationsGroup
 
   - name: 'sfbgs021.esm'
