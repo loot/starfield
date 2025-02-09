@@ -524,7 +524,7 @@ plugins:
   - name: 'kinggathcreations_legendary.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/d4f5c6a2-ea4f-4f74-b338-6403c5717ec0/McClarence_Outfitters__Legendary_Customization/'
-        name: 'McClarence Outfitters: Legendary Customization
+        name: 'McClarence Outfitters: Legendary Customization'
     group: *verifiedCreationsGroup
 
 ###### Base Game Patches ######
