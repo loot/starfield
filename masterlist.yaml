@@ -322,17 +322,17 @@ groups:
   - name: &bgsCreationsGroup Bethesda Game Studios Creations
     after: [ *mainGroup ]
 
-  - name: &verifiedCreationsGroup Verified Creations
-    after: [ *bgsCreationsGroup ]
-
   - name: &fixesGroup Fixes & Resources
-    after: [ *verifiedCreationsGroup ]
+    after: [ *bgsCreationsGroup ]
 
   - name: &earlyLoadersGroup Early Loaders
     after: [ *fixesGroup ]
 
-  - name: default
+  - name: &verifiedCreationsGroup Verified Creations
     after: [ *earlyLoadersGroup ]
+
+  - name: default
+    after: [ *verifiedCreationsGroup ]
 
   - name: &lowPriorityGroup Low Priority Overrides
     description: 'A group for modules that must load after most other mods.'
