@@ -1,9 +1,12 @@
 {
-	"better-yaml.indentSeq": true,
-	"better-yaml.lineWidth": 0,
+	"yaml.format.singleQuote": false,
+	"yaml.format.enable": true,
+	"yaml.format.bracketSpacing": true,
+	"yaml.format.printWidth": 1000,
 	"[yaml]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
-		"editor.defaultFormatter": "kennylong.kubernetes-yaml-formatter"
+		"editor.defaultFormatter": "redhat.vscode-yaml",
+		"editor.formatOnSave": true
 	}
 }

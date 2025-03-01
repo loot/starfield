@@ -6,11 +6,11 @@ prelude:
     # Message Anchors
     - &alreadyInX
       type: error
-      content: 'Delete. Already included in {0}.'
+      content: "Delete. Already included in {0}."
 
     - &alreadyInOrFixedByX
       type: error
-      content: 'Delete. Already included or otherwise fixed in {0}.'
+      content: "Delete. Already included or otherwise fixed in {0}."
 
     - &alsoUseX
       type: say
@@ -26,24 +26,24 @@ prelude:
 
     - &compatPatch
       type: say
-      content: 'It is recommended that you check the following compatibility patch compilation for this mod: {0}'
+      content: "It is recommended that you check the following compatibility patch compilation for this mod: {0}"
 
     - &compatPatchForX
       type: say
-      content: 'It is recommended that you check the following compatibility patch compilation for {0}: {1}'
+      content: "It is recommended that you check the following compatibility patch compilation for {0}: {1}"
 
     - &corrupt
       type: warn
-      content: 'This file is corrupt and should not be used.'
+      content: "This file is corrupt and should not be used."
 
     - &deactivateAfterCharacterCreation
       type: say
-      content: 'Deactivate and/or uninstall this mod after character creation.'
+      content: "Deactivate and/or uninstall this mod after character creation."
 
     - &deleteOrDeactivateX
       type: error
-      content: 'Delete or deactivate. {0}'
-      subs: [ '' ]
+      content: "Delete or deactivate. {0}"
+      subs: [""]
 
     - &deletePlugin
       type: warn
@@ -51,11 +51,11 @@ prelude:
 
     - &deprecated
       type: warn
-      content: 'This file is deprecated and should no longer be used.'
+      content: "This file is deprecated and should no longer be used."
 
     - &disableAfterGeneratingXwithY
       type: say
-      content: 'This plugin may be disabled after generating **{0}** with **{1}**.'
+      content: "This plugin may be disabled after generating **{0}** with **{1}**."
 
     - &essentialFiles
       type: warn
@@ -63,27 +63,27 @@ prelude:
 
     - &includesX
       type: say
-      content: '{0} is included with this mod.'
+      content: "{0} is included with this mod."
 
     - &languageX
       type: say
-      content: 'Language: {0}'
+      content: "Language: {0}"
 
     - &mainQuestCompleted
       type: say
-      content: 'Only use this plugin once the main quest of the game has been completed.'
+      content: "Only use this plugin once the main quest of the game has been completed."
 
     - &masterReassign
       type: say
-      content: 'The **{0}** master must be reassigned to **{1}**.'
+      content: "The **{0}** master must be reassigned to **{1}**."
 
     - &mismatchedFormIDs
       type: error
-      content: 'This plugin is a **{0}**, but it contains FormIDs that do not match this type of Master. Using this plugin would have unpredictable consequences for your game and is therefore not recommended.'
+      content: "This plugin is a **{0}**, but it contains FormIDs that do not match this type of Master. Using this plugin would have unpredictable consequences for your game and is therefore not recommended."
 
     - &missingRequirementXforY
       type: warn
-      content: 'It appears you have installed **{1}**, but some of its requirements seem to be missing. Please ensure you have correctly installed **{0}**.'
+      content: "It appears you have installed **{1}**, but some of its requirements seem to be missing. Please ensure you have correctly installed **{0}**."
 
     - &missingRequirementXforPlugin
       type: warn
@@ -91,28 +91,28 @@ prelude:
 
     - &moddingPlugin
       type: error
-      content: 'This plugin is a modding resource and should not be used in-game.'
+      content: "This plugin is a modding resource and should not be used in-game."
 
     - &moveXFromYToZ
       type: say
-      content: 'Move {0} from {1} to {2}.'
+      content: "Move {0} from {1} to {2}."
 
     - &obsolete
       type: warn
-      content: 'Obsolete. Update to the latest version. {0}'
-      subs: [ '' ]
+      content: "Obsolete. Update to the latest version. {0}"
+      subs: [""]
 
     - &optional
       type: say
-      content: 'This plugin is optional.'
+      content: "This plugin is optional."
 
     - &patch3rdParty
       type: say
-      content: 'You seem to be using **{0}**, but you have not enabled a compatibility patch for this mod. A third party patch is available here: {1}'
+      content: "You seem to be using **{0}**, but you have not enabled a compatibility patch for this mod. A third party patch is available here: {1}"
 
     - &patcherScriptAvailable
       type: say
-      content: '{0} patcher script available here: {1}'
+      content: "{0} patcher script available here: {1}"
 
     - &patchIncluded
       type: say
@@ -120,7 +120,7 @@ prelude:
 
     - &patchOutdated
       type: warn
-      content: 'This patch is outdated and may not be compatible with the latest version of the patched mod.'
+      content: "This patch is outdated and may not be compatible with the latest version of the patched mod."
 
     - &patchProvided
       type: say
@@ -128,15 +128,15 @@ prelude:
 
     - &patchUnavailable
       type: warn
-      content: 'A patch is required to make this mod fully compatible with {0}. None is currently available for download.'
+      content: "A patch is required to make this mod fully compatible with {0}. None is currently available for download."
 
     - &patchUpdateAvailable
       type: say
-      content: 'Update Patch available: {0}'
+      content: "Update Patch available: {0}"
 
     - &renameFile
       type: say
-      content: 'Rename this file to {0}.'
+      content: "Rename this file to {0}."
 
     - &renameXtoY
       type: warn
@@ -145,61 +145,61 @@ prelude:
     # Useful for when a plugin needs SkyUI, but shouldn't load after it (eg. when it's a master plugin).
     - &requiresMCM_X
       type: warn
-      content: 'A **Mod Configuration Menu** is required for this mod to be fully functional. An **MCM** can be added by installing {0}.'
+      content: "A **Mod Configuration Menu** is required for this mod to be fully functional. An **MCM** can be added by installing {0}."
 
     - &requiresResources
       type: warn
-      content: 'Requires resources (e.g. meshes, textures; not plugins) from {0}.'
+      content: "Requires resources (e.g. meshes, textures; not plugins) from {0}."
 
     - &requiresX
       type: warn
-      content: 'Requires: {0}'
+      content: "Requires: {0}"
 
     - &runAnimFramework
       type: say
-      content: 'It appears you have **{0}** installed. Remember to run **{1}** every time you have installed or uninstalled {2}, or a {2}-based mod.'
+      content: "It appears you have **{0}** installed. Remember to run **{1}** every time you have installed or uninstalled {2}, or a {2}-based mod."
 
     - &runxLODGen
       type: say
-      content: 'If you add, remove, or update plugins that alter WRLD/CELL records, remember to update this module with **xLODGen**.'
+      content: "If you add, remove, or update plugins that alter WRLD/CELL records, remember to update this module with **xLODGen**."
 
     - &unsupportedChangeVerified
       type: warn
-      content: 'This plugin has been changed from **{0}** to **{1}**.'
+      content: "This plugin has been changed from **{0}** to **{1}**."
       subs:
-        - 'Previous Type'
-        - 'Type'
+        - "Previous Type"
+        - "Type"
 
     - &useBashTweakInstead
       type: say
-      content: 'A Bashed Patch tweak can be used instead of this plugin. {0}'
-      subs: [ '' ]
+      content: "A Bashed Patch tweak can be used instead of this plugin. {0}"
+      subs: [""]
       condition: 'file("Bashed Patch.*\.esp")'
 
     - &useINITweakInstead
       type: say
-      content: 'An INI tweak can be used instead of this plugin. {0}'
-      subs: [ '' ]
+      content: "An INI tweak can be used instead of this plugin. {0}"
+      subs: [""]
 
     - &useInstead
       type: warn
-      content: 'Use {0} instead.'
+      content: "Use {0} instead."
 
     - &useOnlyOneX
       type: error
-      content: 'Use only one {0}.'
+      content: "Use only one {0}."
 
     - &useVersion
       type: error
-      content: 'Use {0} version.'
+      content: "Use {0} version."
 
     - &useVersionNon
       type: error
-      content: 'Use non-{0} version.'
+      content: "Use non-{0} version."
 
     - &versionOldX
       type: say
-      content: 'It appears you do not have the latest version of {0}. Some mods may require functionality added in the latest version of {0} to work.'
+      content: "It appears you do not have the latest version of {0}. Some mods may require functionality added in the latest version of {0} to work."
 
     - &versionPrecedence
       type: error
@@ -207,57 +207,57 @@ prelude:
 
     - &versionUpToDateX
       type: say
-      content: 'Your {0} is up-to-date.'
+      content: "Your {0} is up-to-date."
 
     - &versionXIncY
       type: error
-      content: 'Your installed version of {0} is not compatible with your version of {1}.'
+      content: "Your installed version of {0} is not compatible with your version of {1}."
 
     - &versionXofYorGreaterRequired
       type: error
-      content: 'Requires version **{0}** or greater of **{1}**.'
+      content: "Requires version **{0}** or greater of **{1}**."
 
     # Cleaning Data Anchors
     # Global Anchors
     - &changeUnsupported
       type: say
       content: "Changing the type of an existing plugin isn't supported. Additional details are provided [here]({0})."
-      subs: [ 'https://loot.github.io/docs/help/Changing-Plugin-Types-In-Starfield.html' ]
+      subs: ["https://loot.github.io/docs/help/Changing-Plugin-Types-In-Starfield.html"]
 
     - &filenameExtension
       type: error
-      content: '{0} does not support the usage of **{1}** plugins ingame, but your load order contains such plugins. In order to avoid irreversible damage to your game, it is recommended to not use **{1}** plugins.'
+      content: "{0} does not support the usage of **{1}** plugins ingame, but your load order contains such plugins. In order to avoid irreversible damage to your game, it is recommended to not use **{1}** plugins."
 
     - &incompatible
       type: error
-      content: '{0} is incompatible with {1}, but both are present.'
+      content: "{0} is incompatible with {1}, but both are present."
 
     - &latestLOOTThread
       type: say
-      content: '[Latest LOOT thread]({0}).'
-      subs: [ 'https://loot.github.io/latest-thread/' ]
+      content: "[Latest LOOT thread]({0})."
+      subs: ["https://loot.github.io/latest-thread/"]
 
     - &pluginEnabler
       type: warn
-      content: 'You have installed {0}, but since {1} version {2} this is no longer needed.'
+      content: "You have installed {0}, but since {1} version {2} this is no longer needed."
 
     - &scriptExtenderMissing
       type: error
-      content: 'You have installed an {0} plugin but {0} was not found! See {0} download page: {1}.'
+      content: "You have installed an {0} plugin but {0} was not found! See {0} download page: {1}."
       subs:
-        - 'SFSE'
-        - '[Starfield Script Extender](https://sfse.silverlock.org)'
+        - "SFSE"
+        - "[Starfield Script Extender](https://sfse.silverlock.org)"
       condition: 'file("SFSE/Plugins/([^\.]+\.dll)") and not file("../sfse_loader.exe")'
 
     - &supersede
       type: warn
-      content: 'You seem to be using **{0}**, but it has been superseded. It is recommended that you use **{1}** instead.'
+      content: "You seem to be using **{0}**, but it has been superseded. It is recommended that you use **{1}** instead."
 
 common:
   # File Anchors
   - &SFSE
-    name: '../sfse_loader.exe'
-    display: '[Starfield Script Extender](https://sfse.silverlock.org/)'
+    name: "../sfse_loader.exe"
+    display: "[Starfield Script Extender](https://sfse.silverlock.org/)"
 
 # Sub-Anchors
 
@@ -270,15 +270,15 @@ globals:
   # Filename extension .esp
   - <<: *filenameExtension
     subs:
-      - 'Starfield'
-      - '.esp'
+      - "Starfield"
+      - ".esp"
     condition: 'file("([^\.]+\.esp)")'
 
   # Filename extension .esl
   - <<: *filenameExtension
     subs:
-      - 'Starfield'
-      - '.esl'
+      - "Starfield"
+      - ".esl"
     condition: 'file("([^\.]+\.esl)")'
 
   # Latest LOOT Thread
@@ -287,279 +287,279 @@ globals:
   # Plugins.txt Enabler
   - <<: *pluginEnabler
     subs:
-      - '[Plugins.txt Enabler](https://www.nexusmods.com/starfield/mods/4157/)'
-      - 'Starfield'
-      - '1.12.30.0'
+      - "[Plugins.txt Enabler](https://www.nexusmods.com/starfield/mods/4157/)"
+      - "Starfield"
+      - "1.12.30.0"
     condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.30.0", >=) and (file("SFSE/Plugins/SFPluginsTxtEnabler.dll") or file("../SFPluginsTxtEnabler.asi"))'
 
   # Latest Version
   # Starfield Game Runtime
   - <<: *versionOldX
-    subs: [ '**Starfield**' ]
+    subs: ["**Starfield**"]
     condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.74.0", <)'
   - <<: *versionUpToDateX
-    subs: [ '**Starfield**' ]
+    subs: ["**Starfield**"]
     condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.74.0", >=)'
   # SFSE
   - <<: *versionOldX
-    subs: [ '**[SFSE](https://www.nexusmods.com/starfield/mods/106/)**' ]
+    subs: ["**[SFSE](https://www.nexusmods.com/starfield/mods/106/)**"]
     condition: 'file("../sfse_loader.exe") and file("../sfse_1_([7-9]|1[0-4])_\d+\.dll") and version("../sfse_1_14_74.dll", "0.0.2.16", <) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.74.0", >=)'
   - <<: *versionUpToDateX
-    subs: [ '**SFSE**' ]
+    subs: ["**SFSE**"]
     condition: 'version("../sfse_1_14_74.dll", "0.0.2.16", >=) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.74.0", >=)'
 
   # SFSE
   # Missing
   - <<: *scriptExtenderMissing
     subs:
-      - 'SFSE'
-      - '[Starfield Script Extender](https://sfse.silverlock.org)'
+      - "SFSE"
+      - "[Starfield Script Extender](https://sfse.silverlock.org)"
     condition: 'readable("../Starfield.exe") and not file("../sfse_loader.exe") and file("SFSE/Plugins/([^\.]+\.dll)")'
 
 groups:
   - name: &mainGroup Main Plugins
 
   - name: &bgsCreationsGroup Bethesda Game Studios Creations
-    after: [ *mainGroup ]
+    after: [*mainGroup]
 
   - name: &fixesGroup Fixes & Resources
-    after: [ *bgsCreationsGroup ]
+    after: [*bgsCreationsGroup]
 
   - name: &earlyLoadersGroup Early Loaders
-    after: [ *fixesGroup ]
+    after: [*fixesGroup]
 
   - name: &verifiedCreationsGroup Verified Creations
-    after: [ *earlyLoadersGroup ]
+    after: [*earlyLoadersGroup]
 
   - name: default
-    after: [ *verifiedCreationsGroup ]
+    after: [*verifiedCreationsGroup]
 
   - name: &lowPriorityGroup Low Priority Overrides
-    description: 'A group for modules that must load after most other mods.'
-    after: [ default ]
+    description: "A group for modules that must load after most other mods."
+    after: [default]
 
   - name: &coreGroup Core Mods
-    after: [ *lowPriorityGroup ]
+    after: [*lowPriorityGroup]
 
   - name: &highPriorityGroup High Priority Overrides
-    after: [ *coreGroup ]
+    after: [*coreGroup]
 
   - name: &lateLoadersGroup Late Loaders
-    after: [ *highPriorityGroup ]
+    after: [*highPriorityGroup]
 
   - name: &dynamicPatchGroup Dynamic Patches
-    after: [ *lateLoadersGroup ]
+    after: [*lateLoadersGroup]
 
   - name: &lateChangesGroup Late Fixes & Changes
-    after: [ *dynamicPatchGroup ]
+    after: [*dynamicPatchGroup]
 
 plugins:
   ###### Official Game Files ######
-  - name: 'Starfield.esm'
+  - name: "Starfield.esm"
     group: *mainGroup
-  - name: 'Constellation.esm'
+  - name: "Constellation.esm"
     group: *mainGroup
-  - name: 'OldMars.esm'
+  - name: "OldMars.esm"
     group: *mainGroup
-  - name: 'BlueprintShips-Starfield.esm'
+  - name: "BlueprintShips-Starfield.esm"
     group: *mainGroup
-  - name: 'SFBGS003.esm'
+  - name: "SFBGS003.esm"
     group: *mainGroup
-  - name: 'SFBGS004.esm'
+  - name: "SFBGS004.esm"
     group: *mainGroup
-  - name: 'SFBGS006.esm'
+  - name: "SFBGS006.esm"
     group: *mainGroup
-  - name: 'SFBGS007.esm'
+  - name: "SFBGS007.esm"
     group: *mainGroup
-  - name: 'SFBGS008.esm'
+  - name: "SFBGS008.esm"
     group: *mainGroup
 
   ###### Official DLC ######
-  - name: 'ShatteredSpace.esm'
+  - name: "ShatteredSpace.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/b6b52ca2-3f1f-4316-bef8-dcb0bb2dcc32/Starfield__Shattered_Space/'
-        name: 'Starfield: Shattered Space'
+      - link: "https://creations.bethesda.net/en/starfield/details/b6b52ca2-3f1f-4316-bef8-dcb0bb2dcc32/Starfield__Shattered_Space/"
+        name: "Starfield: Shattered Space"
     group: *mainGroup
 
   ###### Official BGS Creations ######
-  - name: 'sfbgs00a_a.esm'
+  - name: "sfbgs00a_a.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/31ccf130-4852-417b-842a-9d82672028e4/Skin__Blackout__Drum_Beat_/'
-        name: 'Blackout Drumbeat Skin'
+      - link: "https://creations.bethesda.net/en/starfield/details/31ccf130-4852-417b-842a-9d82672028e4/Skin__Blackout__Drum_Beat_/"
+        name: "Blackout Drumbeat Skin"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs00a_d.esm'
+  - name: "sfbgs00a_d.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/2880d357-3084-447d-a712-c9317eac56d1/Blackout_Shotty_Skin/'
-        name: 'Blackout Shotty Skin'
+      - link: "https://creations.bethesda.net/en/starfield/details/2880d357-3084-447d-a712-c9317eac56d1/Blackout_Shotty_Skin/"
+        name: "Blackout Shotty Skin"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs00a_e.esm'
+  - name: "sfbgs00a_e.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/0dd23a7f-3e76-491c-b879-4f3054708b1f/Blackout_Big_Bang_Skin/'
-        name: 'Blackout Big Bang Skin'
+      - link: "https://creations.bethesda.net/en/starfield/details/0dd23a7f-3e76-491c-b879-4f3054708b1f/Blackout_Big_Bang_Skin/"
+        name: "Blackout Big Bang Skin"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs00a_f.esm'
+  - name: "sfbgs00a_f.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/c5bbdd20-29a6-4508-9dea-24e864dc255b/Blackout_Equinox_Skin/'
-        name: 'Blackout Equinox Skin'
+      - link: "https://creations.bethesda.net/en/starfield/details/c5bbdd20-29a6-4508-9dea-24e864dc255b/Blackout_Equinox_Skin/"
+        name: "Blackout Equinox Skin"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs00a_g.esm'
+  - name: "sfbgs00a_g.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/044b2aa7-42f9-4ba6-93a8-2265d4008641/Blackout_Grendel_Skin/'
-        name: 'Blackout Grendel Skin'
+      - link: "https://creations.bethesda.net/en/starfield/details/044b2aa7-42f9-4ba6-93a8-2265d4008641/Blackout_Grendel_Skin/"
+        name: "Blackout Grendel Skin"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs00a_i.esm'
+  - name: "sfbgs00a_i.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/3301d73c-b6dd-4fa9-ad43-9b9094fb8bc3/Blackout_Hard_Target_Skin/'
-        name: 'Blackout Hard Target Skin'
+      - link: "https://creations.bethesda.net/en/starfield/details/3301d73c-b6dd-4fa9-ad43-9b9094fb8bc3/Blackout_Hard_Target_Skin/"
+        name: "Blackout Hard Target Skin"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs00a_j.esm'
+  - name: "sfbgs00a_j.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/5a8a341a-03a9-43b6-aa11-3d25231cd3ee/Blackout_Kodama_Skin/'
-        name: 'Blackout Kodama Skin'
+      - link: "https://creations.bethesda.net/en/starfield/details/5a8a341a-03a9-43b6-aa11-3d25231cd3ee/Blackout_Kodama_Skin/"
+        name: "Blackout Kodama Skin"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs00b.esm'
+  - name: "sfbgs00b.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/1106af41-fac5-431e-aa1a-163b3e5d2892/Escape/'
-        name: 'Escape'
+      - link: "https://creations.bethesda.net/en/starfield/details/1106af41-fac5-431e-aa1a-163b3e5d2892/Escape/"
+        name: "Escape"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs00c.esm'
+  - name: "sfbgs00c.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/daa65855-1e97-495d-aa7d-fd675e40024c/The_Perfect_Recipe/'
-        name: 'The Perfect Recipe'
+      - link: "https://creations.bethesda.net/en/starfield/details/daa65855-1e97-495d-aa7d-fd675e40024c/The_Perfect_Recipe/"
+        name: "The Perfect Recipe"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs00e.esm'
+  - name: "sfbgs00e.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/bdf19afb-2be7-43ad-b023-9c310e3602d9/Constellation_Plushie_Set/'
-        name: 'Constellation Plushie Set'
+      - link: "https://creations.bethesda.net/en/starfield/details/bdf19afb-2be7-43ad-b023-9c310e3602d9/Constellation_Plushie_Set/"
+        name: "Constellation Plushie Set"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs00f_a.esm'
+  - name: "sfbgs00f_a.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/6cb482a0-9fb6-48f5-ad69-c4c40d830bd5/CombaTech_Digital_Camo_Skin_Pack/'
-        name: 'CombaTech Digital Camo Skin Pack'
+      - link: "https://creations.bethesda.net/en/starfield/details/6cb482a0-9fb6-48f5-ad69-c4c40d830bd5/CombaTech_Digital_Camo_Skin_Pack/"
+        name: "CombaTech Digital Camo Skin Pack"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs01b.esm'
+  - name: "sfbgs01b.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/37bf9b4b-f281-4460-a9a5-c67bf87139fa/Shattered_Space_Plushie_Set/'
-        name: 'Shattered Space Plushie Set'
+      - link: "https://creations.bethesda.net/en/starfield/details/37bf9b4b-f281-4460-a9a5-c67bf87139fa/Shattered_Space_Plushie_Set/"
+        name: "Shattered Space Plushie Set"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs01c.esm'
+  - name: "sfbgs01c.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/f84790ea-caeb-4a73-9d06-d4db254dc37d/Water_Cooled_Miners__39__Outfit/'
+      - link: "https://creations.bethesda.net/en/starfield/details/f84790ea-caeb-4a73-9d06-d4db254dc37d/Water_Cooled_Miners__39__Outfit/"
         name: "Water-Cooled Miners' Outfit"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs02a_a.esm'
+  - name: "sfbgs02a_a.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/128b6982-590d-47eb-b8cd-b20917b2de13/Allied_Desert_Camo_Skin_Pack/'
-        name: 'Allied Desert Camo Skin Pack'
+      - link: "https://creations.bethesda.net/en/starfield/details/128b6982-590d-47eb-b8cd-b20917b2de13/Allied_Desert_Camo_Skin_Pack/"
+        name: "Allied Desert Camo Skin Pack"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs02b_a.esm'
+  - name: "sfbgs02b_a.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/4d2573b0-b5fb-4e18-ad2a-eb93243e9338/Allied_Winter_Camo_Skin_Pack/'
-        name: 'Allied Winter Camo Skin Pack'
+      - link: "https://creations.bethesda.net/en/starfield/details/4d2573b0-b5fb-4e18-ad2a-eb93243e9338/Allied_Winter_Camo_Skin_Pack/"
+        name: "Allied Winter Camo Skin Pack"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs009.esm'
+  - name: "sfbgs009.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/07fe73ab-6edb-471d-8769-7bff25ffeb95/Ancient_Mariner_Module/'
-        name: 'Ancient Mariner Module'
+      - link: "https://creations.bethesda.net/en/starfield/details/07fe73ab-6edb-471d-8769-7bff25ffeb95/Ancient_Mariner_Module/"
+        name: "Ancient Mariner Module"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs019.esm'
+  - name: "sfbgs019.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/e3295393-57db-47ba-91e4-2ba74133856a/Deimog/'
-        name: 'Deimog'
+      - link: "https://creations.bethesda.net/en/starfield/details/e3295393-57db-47ba-91e4-2ba74133856a/Deimog/"
+        name: "Deimog"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs021.esm'
+  - name: "sfbgs021.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/e8ff65fc-7c13-44b3-b8a5-27df6b28007d/Observatory/'
-        name: 'Observatory'
+      - link: "https://creations.bethesda.net/en/starfield/details/e8ff65fc-7c13-44b3-b8a5-27df6b28007d/Observatory/"
+        name: "Observatory"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs023.esm'
+  - name: "sfbgs023.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/beefc7ae-59f4-4934-b2a5-d04e5264f029/Starborn_Gravis_Suit/'
-        name: 'Starborn Gravis Suit'
+      - link: "https://creations.bethesda.net/en/starfield/details/beefc7ae-59f4-4934-b2a5-d04e5264f029/Starborn_Gravis_Suit/"
+        name: "Starborn Gravis Suit"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs024.esm'
+  - name: "sfbgs024.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/66311a58-23a4-4950-9b25-d70f693fadc0/Civilian_Survival_Suit/'
-        name: 'Civilian Survival Suit'
+      - link: "https://creations.bethesda.net/en/starfield/details/66311a58-23a4-4950-9b25-d70f693fadc0/Civilian_Survival_Suit/"
+        name: "Civilian Survival Suit"
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs031.esm'
+  - name: "sfbgs031.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/a4c2c041-fcd5-455b-a8a4-41e106ba3de1/Creature_Plushie_Set/'
-        name: 'Creature Plushie Set'
+      - link: "https://creations.bethesda.net/en/starfield/details/a4c2c041-fcd5-455b-a8a4-41e106ba3de1/Creature_Plushie_Set/"
+        name: "Creature Plushie Set"
     group: *bgsCreationsGroup
 
-  - name: 'sfta01.esm'
+  - name: "sfta01.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/4bf1a31f-46d5-47bf-a5e6-d0f9e2496d0c/Trackers_Alliance__The_Vulture/'
-        name: 'Trackers Alliance: The Vulture'
+      - link: "https://creations.bethesda.net/en/starfield/details/4bf1a31f-46d5-47bf-a5e6-d0f9e2496d0c/Trackers_Alliance__The_Vulture/"
+        name: "Trackers Alliance: The Vulture"
     group: *bgsCreationsGroup
 
-  - name: 'kgcdoom.esm'
+  - name: "kgcdoom.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/6d89fcba-9940-4d8b-abc7-5cdb2c9b5a4d/At_Hell__39_s_Gate/'
-        name: 'At Hell''s Gate'
+      - link: "https://creations.bethesda.net/en/starfield/details/6d89fcba-9940-4d8b-abc7-5cdb2c9b5a4d/At_Hell__39_s_Gate/"
+        name: "At Hell's Gate"
     group: *bgsCreationsGroup
 
-###### Verified Creations ######
-  - name: 'kinggathcreations_legendary.esm'
+  ###### Verified Creations ######
+  - name: "kinggathcreations_legendary.esm"
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/d4f5c6a2-ea4f-4f74-b338-6403c5717ec0/McClarence_Outfitters__Legendary_Customization/'
-        name: 'McClarence Outfitters: Legendary Customization'
+      - link: "https://creations.bethesda.net/en/starfield/details/d4f5c6a2-ea4f-4f74-b338-6403c5717ec0/McClarence_Outfitters__Legendary_Customization/"
+        name: "McClarence Outfitters: Legendary Customization"
     group: *verifiedCreationsGroup
 
-###### Base Game Patches ######
-  - name: 'StarfieldCommunityPatch.esm'
+  ###### Base Game Patches ######
+  - name: "StarfieldCommunityPatch.esm"
     url:
-      - link: 'https://www.nexusmods.com/starfield/mods/1/'
-        name: 'Starfield Community Patch (Nexus Mods)'
-      - link: 'https://creations.bethesda.net/en/starfield/details/a11a0cdf-5abb-4a59-9e12-e261e5aae8d5/Starfield_Community_Patch/'
-        name: 'Starfield Community Patch (Bethesda.net Mods)'
+      - link: "https://www.nexusmods.com/starfield/mods/1/"
+        name: "Starfield Community Patch (Nexus Mods)"
+      - link: "https://creations.bethesda.net/en/starfield/details/a11a0cdf-5abb-4a59-9e12-e261e5aae8d5/Starfield_Community_Patch/"
+        name: "Starfield Community Patch (Bethesda.net Mods)"
     group: *fixesGroup
 
-  - name: 'unofficial starfield patch.esm'
+  - name: "unofficial starfield patch.esm"
     url:
-      - link: 'https://www.nexusmods.com/starfield/mods/143/'
-        name: 'Unofficial Starfield Patch (Nexus Mods)'
-      - link: 'https://creations.bethesda.net/en/starfield/details/363ee78b-1735-4402-b3db-24236d060f7f/Unofficial_Starfield_Patch/'
-        name: 'Unofficial Starfield Patch (Bethesda.net Mods)'
+      - link: "https://www.nexusmods.com/starfield/mods/143/"
+        name: "Unofficial Starfield Patch (Nexus Mods)"
+      - link: "https://creations.bethesda.net/en/starfield/details/363ee78b-1735-4402-b3db-24236d060f7f/Unofficial_Starfield_Patch/"
+        name: "Unofficial Starfield Patch (Bethesda.net Mods)"
     group: *fixesGroup
 
-  - name: 'unofficial starfield patch - blueprint edits.esm'
+  - name: "unofficial starfield patch - blueprint edits.esm"
     url:
-      - link: 'https://www.nexusmods.com/starfield/mods/143/'
-        name: 'Unofficial Starfield Patch (Nexus Mods)'
-      - link: 'https://creations.bethesda.net/en/starfield/details/6d5e3b81-8ffb-4535-a39c-16d794f2651f/Unofficial_Starfield_Patch___Blueprint_Edits/'
-        name: 'Unofficial Starfield Patch - Blueprint Edits (Bethesda.net Mods)'
+      - link: "https://www.nexusmods.com/starfield/mods/143/"
+        name: "Unofficial Starfield Patch (Nexus Mods)"
+      - link: "https://creations.bethesda.net/en/starfield/details/6d5e3b81-8ffb-4535-a39c-16d794f2651f/Unofficial_Starfield_Patch___Blueprint_Edits/"
+        name: "Unofficial Starfield Patch - Blueprint Edits (Bethesda.net Mods)"
     group: *lateChangesGroup
 
-  - name: 'unofficial shattered space patch.esm'
+  - name: "unofficial shattered space patch.esm"
     url:
-      - link: 'https://www.nexusmods.com/starfield/mods/143/'
-        name: 'Unofficial Shattered Space Patch (Nexus Mods)'
-      - link: 'https://creations.bethesda.net/en/starfield/details/b752542d-e488-437d-8c99-a3e5a19cad64/Unofficial_Shattered_Space_Patch/'
-        name: 'Unofficial Shattered Space Patch (Bethesda.net Mods)'
+      - link: "https://www.nexusmods.com/starfield/mods/143/"
+        name: "Unofficial Shattered Space Patch (Nexus Mods)"
+      - link: "https://creations.bethesda.net/en/starfield/details/b752542d-e488-437d-8c99-a3e5a19cad64/Unofficial_Shattered_Space_Patch/"
+        name: "Unofficial Shattered Space Patch (Bethesda.net Mods)"
     group: *fixesGroup
-    after: [ 'unofficial starfield patch.esm' ]
+    after: ["unofficial starfield patch.esm"]
 
   ###### Modding Tools - Resources ######
   ###### Modding Tools - Generated Files ######
@@ -569,12 +569,12 @@ plugins:
 
   - name: 'MoreDramaticGravJumps\.es[mp]'
     url:
-      - link: 'https://www.nexusmods.com/starfield/mods/2413/'
-        name: 'More Dramatic Grav Jumps'
-  - name: 'MoreDramaticGravJumps.esp'
+      - link: "https://www.nexusmods.com/starfield/mods/2413/"
+        name: "More Dramatic Grav Jumps"
+  - name: "MoreDramaticGravJumps.esp"
     msg:
       - <<: *obsolete
-        subs: [ '[More Dramatic Grav Jumps .esm Plugin](https://www.nexusmods.com/starfield/mods/2413/)' ]
+        subs: ["[More Dramatic Grav Jumps .esm Plugin](https://www.nexusmods.com/starfield/mods/2413/)"]
 
   ###### AudioVisual - Models & Textures ######
   ###### AudioVisual - Sound & Music ######
@@ -589,20 +589,20 @@ plugins:
   ###### Encounters - Neutrals ######
   ###### Environment, Landscape & Flora ######
   ###### Gameplay ######
-  - name: 'cargo2x.esp'
+  - name: "cargo2x.esp"
     url:
-      - link: 'https://www.nexusmods.com/starfield/mods/1049/'
-        name: 'CargoPlus'
+      - link: "https://www.nexusmods.com/starfield/mods/1049/"
+        name: "CargoPlus"
     msg:
       - <<: *corrupt
         condition: 'checksum("cargo2x.esp", A5257F3C)'
 
   ###### Gameplay - Character Classes & Races ######
   ###### Gameplay - Combat ######
-  - name: 'RealisticDamageMultipliers.esm'
+  - name: "RealisticDamageMultipliers.esm"
     url:
-      - link: 'https://www.nexusmods.com/starfield/mods/188/'
-        name: 'Realistic Damage Multipliers'
+      - link: "https://www.nexusmods.com/starfield/mods/188/"
+        name: "Realistic Damage Multipliers"
     msg:
       - <<: *corrupt
         condition: 'checksum("RealisticDamageMultipliers.esm", CBC568FF)'
@@ -610,44 +610,44 @@ plugins:
   ###### Gameplay - Crafting & Harvesting ######
   - name: 'legendaries\.es[mp]'
     url:
-      - link: 'https://www.nexusmods.com/starfield/mods/1379/'
-        name: 'Legendary Modifications'
-  - name: 'legendaries.esp'
+      - link: "https://www.nexusmods.com/starfield/mods/1379/"
+        name: "Legendary Modifications"
+  - name: "legendaries.esp"
     msg:
       - <<: *obsolete
-        subs: [ '[Legendary Modifications .esm Plugin](https://www.nexusmods.com/starfield/mods/1379/)' ]
+        subs: ["[Legendary Modifications .esm Plugin](https://www.nexusmods.com/starfield/mods/1379/)"]
         condition: 'checksum("legendaries.esp", 333DF58A) or checksum("legendaries.esp", 62E07118)'
 
   ###### Gameplay - Economy & Item Balance ######
-  - name: 'CaptLockerUnlimited.esp'
+  - name: "CaptLockerUnlimited.esp"
     url:
-      - link: 'https://www.nexusmods.com/starfield/mods/911/'
+      - link: "https://www.nexusmods.com/starfield/mods/911/"
         name: "Captain's Locker Unlimited"
     msg:
       - <<: *corrupt
         condition: 'checksum("CaptLockerUnlimited.esp", F41DB3F5)'
 
-###### Gameplay - Abilities ######
-###### Gameplay - Mount & Follower Managers ######
-###### Gameplay - NPC Balance & Distribution ######
-###### Gameplay - NPC Behaviour & Dialogue ######
-###### Gameplay - Quests ######
-###### Gameplay - Skills & Perks ######
-###### Gameplay - User Interface ######
-###### Gameplay - User Interface - Map markers ######
-###### Gameplay - User Interface - Maps ######
-###### Items ######
-###### Locations - New Lands ######
-###### Locations - New Structures & Landmarks ######
-###### Location - Overhauls ######
-###### Locations - Player Homes ######
-###### 3RD Party Patches ######
+  ###### Gameplay - Abilities ######
+  ###### Gameplay - Mount & Follower Managers ######
+  ###### Gameplay - NPC Balance & Distribution ######
+  ###### Gameplay - NPC Behaviour & Dialogue ######
+  ###### Gameplay - Quests ######
+  ###### Gameplay - Skills & Perks ######
+  ###### Gameplay - User Interface ######
+  ###### Gameplay - User Interface - Map markers ######
+  ###### Gameplay - User Interface - Maps ######
+  ###### Items ######
+  ###### Locations - New Lands ######
+  ###### Locations - New Structures & Landmarks ######
+  ###### Location - Overhauls ######
+  ###### Locations - Player Homes ######
+  ###### 3RD Party Patches ######
 
-###### Anything new can go after this (If you're not sure where to put it) ######
-  - name: 'final patch.esm'
+  ###### Anything new can go after this (If you're not sure where to put it) ######
+  - name: "final patch.esm"
     url:
-      - link: 'https://www.nexusmods.com/starfield/mods/12072/'
-        name: 'The Final Patch (Nexus Mods)'
-      - link: 'https://creations.bethesda.net/en/starfield/details/04278b2d-3e4a-4b3c-8dee-0d98bab3ddad/The_Final_Patch/'
-        name: 'The Final Patch (Bethesda.net Mods)'
+      - link: "https://www.nexusmods.com/starfield/mods/12072/"
+        name: "The Final Patch (Nexus Mods)"
+      - link: "https://creations.bethesda.net/en/starfield/details/04278b2d-3e4a-4b3c-8dee-0d98bab3ddad/The_Final_Patch/"
+        name: "The Final Patch (Bethesda.net Mods)"
     group: *lateChangesGroup
