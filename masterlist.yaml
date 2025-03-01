@@ -296,17 +296,17 @@ globals:
   # Starfield Game Runtime
   - <<: *versionOldX
     subs: [ '**Starfield**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.70.0", <)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.74.0", <)'
   - <<: *versionUpToDateX
     subs: [ '**Starfield**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.70.0", >=)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.74.0", >=)'
   # SFSE
   - <<: *versionOldX
     subs: [ '**[SFSE](https://www.nexusmods.com/starfield/mods/106/)**' ]
-    condition: 'file("../sfse_loader.exe") and file("../sfse_1_([7-9]|1[0-4])_\d+\.dll") and version("../sfse_1_14_70.dll", "0.0.2.13", <) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.70.0", >=)'
+    condition: 'file("../sfse_loader.exe") and file("../sfse_1_([7-9]|1[0-4])_\d+\.dll") and version("../sfse_1_14_74.dll", "0.0.2.16", <) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.74.0", >=)'
   - <<: *versionUpToDateX
     subs: [ '**SFSE**' ]
-    condition: 'version("../sfse_1_14_70.dll", "0.0.2.13", >=) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.70.0", >=)'
+    condition: 'version("../sfse_1_14_74.dll", "0.0.2.16", >=) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.14.74.0", >=)'
 
   # SFSE
   # Missing
@@ -328,8 +328,11 @@ groups:
   - name: &earlyLoadersGroup Early Loaders
     after: [ *fixesGroup ]
 
-  - name: default
+  - name: &verifiedCreationsGroup Verified Creations
     after: [ *earlyLoadersGroup ]
+
+  - name: default
+    after: [ *verifiedCreationsGroup ]
 
   - name: &lowPriorityGroup Low Priority Overrides
     description: 'A group for modules that must load after most other mods.'
@@ -511,8 +514,20 @@ plugins:
         name: 'Trackers Alliance: The Vulture'
     group: *bgsCreationsGroup
 
-  ###### Verified Creations ######
-  ###### Base Game Patches ######
+  - name: 'kgcdoom.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/6d89fcba-9940-4d8b-abc7-5cdb2c9b5a4d/At_Hell__39_s_Gate/'
+        name: 'At Hell''s Gate'
+    group: *bgsCreationsGroup
+
+###### Verified Creations ######
+  - name: 'kinggathcreations_legendary.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/d4f5c6a2-ea4f-4f74-b338-6403c5717ec0/McClarence_Outfitters__Legendary_Customization/'
+        name: 'McClarence Outfitters: Legendary Customization'
+    group: *verifiedCreationsGroup
+
+###### Base Game Patches ######
   - name: 'StarfieldCommunityPatch.esm'
     url:
       - link: 'https://www.nexusmods.com/starfield/mods/1/'
@@ -629,3 +644,10 @@ plugins:
 ###### 3RD Party Patches ######
 
 ###### Anything new can go after this (If you're not sure where to put it) ######
+  - name: 'final patch.esm'
+    url:
+      - link: 'https://www.nexusmods.com/starfield/mods/12072/'
+        name: 'The Final Patch (Nexus Mods)'
+      - link: 'https://creations.bethesda.net/en/starfield/details/04278b2d-3e4a-4b3c-8dee-0d98bab3ddad/The_Final_Patch/'
+        name: 'The Final Patch (Bethesda.net Mods)'
+    group: *lateChangesGroup
