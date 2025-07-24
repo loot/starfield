@@ -566,6 +566,13 @@ plugins:
 ###### Modding Tools - Generated Files ######
 ###### Resources & Frameworks ######
 ###### AudioVisual ######
+  - name: 'smarterspacesuitautohide.esm'
+    url:
+      - link: 'https://www.nexusmods.com/starfield/mods/8423/'
+        name: 'Smarter Spacesuit Auto-Hide (Nexus Mods)'
+      - link: 'https://creations.bethesda.net/en/starfield/details/836ecd0b-0678-4ad3-b8bd-2c3682d975fc/Smarter_Spacesuit_Auto_Hide/'
+        name: 'Smarter Spacesuit Auto-Hide (Bethesda.net Mods)'
+    group: default
 ###### AudioVisual - Animations & Physics ######
   - name: 'MoreDramaticGravJumps\.es[mp]'
     url:
