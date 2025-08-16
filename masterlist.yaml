@@ -303,10 +303,10 @@ globals:
   # SFSE
   - <<: *versionOldX
     subs: [ '**[SFSE](https://www.nexusmods.com/starfield/mods/106/)**' ]
-    condition: 'file("../sfse_loader.exe") and file("../sfse_1_([7-9]|1[0-5])_\d+\.dll") and version("../sfse_1_15_216.dll", "0.0.2.17", <) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.216.0", >=)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.222.0", >=) and file("../sfse_loader.exe") and file("../sfse_1_15_222.dll") and version("../sfse_1_15_222.dll", "0.0.2.18", <)'
   - <<: *versionUpToDateX
     subs: [ '**SFSE**' ]
-    condition: 'version("../sfse_1_15_216.dll", "0.0.2.17", >=) and readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.216.0", >=)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.222.0", >=) and version("../sfse_1_15_222.dll", "0.0.2.18", >=)'
 
 # SFSE
   # Missing
