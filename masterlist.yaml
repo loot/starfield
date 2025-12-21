@@ -268,7 +268,7 @@ globals:
   - *latestLOOTThread
 
 # Latest Version
-  # Starfield Game Runtime
+  # Starfield
   - <<: *versionOldX
     subs: [ '**Starfield**' ]
     condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.222.0", <)'
