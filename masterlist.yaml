@@ -264,6 +264,9 @@ common:
 bash_tags: []
 
 globals:
+# Latest LOOT Thread
+  - *latestLOOTThread
+
 # Unsupported Plugin type change
   - *changeUnsupported
 
@@ -280,9 +283,6 @@ globals:
       - 'Starfield'
       - '.esl'
     condition: 'file("([^\.]+\.esl)")'
-
-# Latest LOOT Thread
-  - *latestLOOTThread
 
 # Plugins.txt Enabler
   - <<: *pluginEnabler
