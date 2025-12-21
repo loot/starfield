@@ -267,6 +267,30 @@ globals:
 # Latest LOOT Thread
   - *latestLOOTThread
 
+# Latest Version
+  # Starfield Game Runtime
+  - <<: *versionOldX
+    subs: [ '**Starfield**' ]
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.222.0", <)'
+  - <<: *versionUpToDateX
+    subs: [ '**Starfield**' ]
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.222.0", >=)'
+  # SFSE
+  - <<: *versionOldX
+    subs: [ '**[SFSE](https://www.nexusmods.com/starfield/mods/106/)**' ]
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.222.0", >=) and file("../sfse_loader.exe") and file("../sfse_1_15_222.dll") and version("../sfse_1_15_222.dll", "0.0.2.18", <)'
+  - <<: *versionUpToDateX
+    subs: [ '**SFSE**' ]
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.222.0", >=) and version("../sfse_1_15_222.dll", "0.0.2.18", >=)'
+
+# SFSE
+  # Missing
+  - <<: *scriptExtenderMissing
+    subs:
+      - 'SFSE'
+      - '[Starfield Script Extender](https://sfse.silverlock.org)'
+    condition: 'readable("../Starfield.exe") and not file("../sfse_loader.exe") and file("SFSE/Plugins/([^\.]+\.dll)")'
+
 # Unsupported Plugin type change
   - *changeUnsupported
 
@@ -291,30 +315,6 @@ globals:
       - 'Starfield'
       - '1.12.30.0'
     condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.30.0", >=) and (file("SFSE/Plugins/SFPluginsTxtEnabler.dll") or file("../SFPluginsTxtEnabler.asi"))'
-
-# Latest Version
-  # Starfield Game Runtime
-  - <<: *versionOldX
-    subs: [ '**Starfield**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.222.0", <)'
-  - <<: *versionUpToDateX
-    subs: [ '**Starfield**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.222.0", >=)'
-  # SFSE
-  - <<: *versionOldX
-    subs: [ '**[SFSE](https://www.nexusmods.com/starfield/mods/106/)**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.222.0", >=) and file("../sfse_loader.exe") and file("../sfse_1_15_222.dll") and version("../sfse_1_15_222.dll", "0.0.2.18", <)'
-  - <<: *versionUpToDateX
-    subs: [ '**SFSE**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.15.222.0", >=) and version("../sfse_1_15_222.dll", "0.0.2.18", >=)'
-
-# SFSE
-  # Missing
-  - <<: *scriptExtenderMissing
-    subs:
-      - 'SFSE'
-      - '[Starfield Script Extender](https://sfse.silverlock.org)'
-    condition: 'readable("../Starfield.exe") and not file("../sfse_loader.exe") and file("SFSE/Plugins/([^\.]+\.dll)")'
 
 groups:
   - name: &mainGroup Main Plugins
