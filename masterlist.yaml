@@ -510,11 +510,40 @@ plugins:
         name: 'Creature Plushie Set'
     group: *bgsCreationsGroup
 
-  - name: 'sfta01.esm'
+  - name: '(blueprintships-)?sfta0[1-6]\.esm'
     url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/4bf1a31f-46d5-47bf-a5e6-d0f9e2496d0c/Trackers_Alliance__The_Vulture/'
-        name: 'Trackers Alliance: The Vulture'
+      - link: 'https://creations.bethesda.net/en/starfield/details/4bf1a31f-46d5-47bf-a5e6-d0f9e2496d0c/Trackers_Alliance__The_Complete_Bounty_Series'
+        name: 'Trackers Alliance: The Complete Bounty Series'
     group: *bgsCreationsGroup
+
+  - name: 'sfta02.esm'
+    after: [ 'sfta01.esm' ]
+
+  - name: 'sfta03.esm'
+    after:
+      - 'sfta01.esm'
+      - 'sfta02.esm'
+
+  - name: 'sfta04.esm'
+    after:
+      - 'sfta01.esm'
+      - 'sfta02.esm'
+      - 'sfta03.esm'
+
+  - name: 'sfta05.esm'
+    after:
+      - 'sfta01.esm'
+      - 'sfta02.esm'
+      - 'sfta03.esm'
+      - 'sfta04.esm'
+
+  - name: 'sfta06.esm'
+    after:
+      - 'sfta01.esm'
+      - 'sfta02.esm'
+      - 'sfta03.esm'
+      - 'sfta04.esm'
+      - 'sfta05.esm'
 
   - name: 'kgcdoom.esm'
     url:
