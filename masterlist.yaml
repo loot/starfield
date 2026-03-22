@@ -323,11 +323,11 @@ groups:
   - name: &bgsCreationsGroup Bethesda Game Studios Creations
     after: [ *mainGroup ]
 
-  - name: &bgsCreationsTrackerAllienceGroup BGS Creations - Tracker Alliance
+  - name: &bgsCreationsTrackersAllianceGroup BGS Creations - Trackers Alliance
     after: [ *bgsCreationsGroup ]
 
   - name: &bgsCreationsLateGroup BGS Creations - Late
-    after: [ *bgsCreationsTrackerAllienceGroup ]
+    after: [ *bgsCreationsTrackersAllianceGroup ]
 
   - name: &fixesGroup Fixes & Resources
     after: [ *bgsCreationsLateGroup ]
