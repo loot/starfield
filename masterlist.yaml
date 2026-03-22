@@ -390,6 +390,12 @@ plugins:
     group: *mainGroup
 
 ###### Official BGS Creations ######
+  - name: 'sfbgs009.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/07fe73ab-6edb-471d-8769-7bff25ffeb95/Ancient_Mariner_Module/'
+        name: 'Ancient Mariner Module'
+    group: *bgsCreationsGroup
+
   - name: 'sfbgs00a_a.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/31ccf130-4852-417b-842a-9d82672028e4/Skin__Blackout__Drum_Beat_/'
@@ -478,12 +484,6 @@ plugins:
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/4d2573b0-b5fb-4e18-ad2a-eb93243e9338/Allied_Winter_Camo_Skin_Pack/'
         name: 'Allied Winter Camo Skin Pack'
-    group: *bgsCreationsGroup
-
-  - name: 'sfbgs009.esm'
-    url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/07fe73ab-6edb-471d-8769-7bff25ffeb95/Ancient_Mariner_Module/'
-        name: 'Ancient Mariner Module'
     group: *bgsCreationsGroup
 
   - name: 'sfbgs019.esm'
