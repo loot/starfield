@@ -480,18 +480,6 @@ plugins:
         name: 'Water-Cooled Miners'' Outfit'
     group: *bgsCreationsGroup
 
-  - name: 'sfbgs02a_a.esm'
-    url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/128b6982-590d-47eb-b8cd-b20917b2de13/Allied_Desert_Camo_Skin_Pack/'
-        name: 'Allied Desert Camo Skin Pack'
-    group: *bgsCreationsGroup
-
-  - name: 'sfbgs02b_a.esm'
-    url:
-      - link: 'https://creations.bethesda.net/en/starfield/details/4d2573b0-b5fb-4e18-ad2a-eb93243e9338/Allied_Winter_Camo_Skin_Pack/'
-        name: 'Allied Winter Camo Skin Pack'
-    group: *bgsCreationsGroup
-
   - name: 'sfbgs021.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/e8ff65fc-7c13-44b3-b8a5-27df6b28007d/Observatory/'
@@ -508,6 +496,18 @@ plugins:
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/66311a58-23a4-4950-9b25-d70f693fadc0/Civilian_Survival_Suit/'
         name: 'Civilian Survival Suit'
+    group: *bgsCreationsGroup
+
+  - name: 'sfbgs02a_a.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/128b6982-590d-47eb-b8cd-b20917b2de13/Allied_Desert_Camo_Skin_Pack/'
+        name: 'Allied Desert Camo Skin Pack'
+    group: *bgsCreationsGroup
+
+  - name: 'sfbgs02b_a.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/4d2573b0-b5fb-4e18-ad2a-eb93243e9338/Allied_Winter_Camo_Skin_Pack/'
+        name: 'Allied Winter Camo Skin Pack'
     group: *bgsCreationsGroup
 
   - name: 'sfbgs031.esm'
