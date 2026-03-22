@@ -401,120 +401,349 @@ plugins:
       - link: 'https://creations.bethesda.net/en/starfield/details/31ccf130-4852-417b-842a-9d82672028e4/Skin__Blackout__Drum_Beat_/'
         name: 'Blackout Drumbeat Skin'
     group: *bgsCreationsGroup
+    after: [ 'sfbgs009.esm' ]
 
   - name: 'sfbgs00a_d.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/2880d357-3084-447d-a712-c9317eac56d1/Blackout_Shotty_Skin/'
         name: 'Blackout Shotty Skin'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
 
   - name: 'sfbgs00a_e.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/0dd23a7f-3e76-491c-b879-4f3054708b1f/Blackout_Big_Bang_Skin/'
         name: 'Blackout Big Bang Skin'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
 
   - name: 'sfbgs00a_f.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/c5bbdd20-29a6-4508-9dea-24e864dc255b/Blackout_Equinox_Skin/'
         name: 'Blackout Equinox Skin'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
 
   - name: 'sfbgs00a_g.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/044b2aa7-42f9-4ba6-93a8-2265d4008641/Blackout_Grendel_Skin/'
         name: 'Blackout Grendel Skin'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
 
   - name: 'sfbgs00a_i.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/3301d73c-b6dd-4fa9-ad43-9b9094fb8bc3/Blackout_Hard_Target_Skin/'
         name: 'Blackout Hard Target Skin'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
 
   - name: 'sfbgs00a_j.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/5a8a341a-03a9-43b6-aa11-3d25231cd3ee/Blackout_Kodama_Skin/'
         name: 'Blackout Kodama Skin'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
 
   - name: 'sfbgs00b.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/1106af41-fac5-431e-aa1a-163b3e5d2892/Escape/'
         name: 'Escape'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
 
   - name: 'sfbgs00c.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/daa65855-1e97-495d-aa7d-fd675e40024c/The_Perfect_Recipe/'
         name: 'The Perfect Recipe'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
 
   - name: 'sfbgs00e.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/bdf19afb-2be7-43ad-b023-9c310e3602d9/Constellation_Plushie_Set/'
         name: 'Constellation Plushie Set'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
 
   - name: 'sfbgs00f_a.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/6cb482a0-9fb6-48f5-ad69-c4c40d830bd5/CombaTech_Digital_Camo_Skin_Pack/'
         name: 'CombaTech Digital Camo Skin Pack'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
+      - 'sfbgs00e.esm'
 
   - name: 'sfbgs019.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/e3295393-57db-47ba-91e4-2ba74133856a/Deimog/'
         name: 'Deimog'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
+      - 'sfbgs00e.esm'
+      - 'sfbgs00f_a.esm'
 
   - name: 'sfbgs01b.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/37bf9b4b-f281-4460-a9a5-c67bf87139fa/Shattered_Space_Plushie_Set/'
         name: 'Shattered Space Plushie Set'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
+      - 'sfbgs00e.esm'
+      - 'sfbgs00f_a.esm'
+      - 'sfbgs019.esm'
 
   - name: 'sfbgs01c.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/f84790ea-caeb-4a73-9d06-d4db254dc37d/Water_Cooled_Miners__39__Outfit/'
         name: 'Water-Cooled Miners'' Outfit'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
+      - 'sfbgs00e.esm'
+      - 'sfbgs00f_a.esm'
+      - 'sfbgs019.esm'
+      - 'sfbgs01b.esm'
 
   - name: 'sfbgs021.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/e8ff65fc-7c13-44b3-b8a5-27df6b28007d/Observatory/'
         name: 'Observatory'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
+      - 'sfbgs00e.esm'
+      - 'sfbgs00f_a.esm'
+      - 'sfbgs019.esm'
+      - 'sfbgs01b.esm'
+      - 'sfbgs01c.esm'
 
   - name: 'sfbgs023.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/beefc7ae-59f4-4934-b2a5-d04e5264f029/Starborn_Gravis_Suit/'
         name: 'Starborn Gravis Suit'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
+      - 'sfbgs00e.esm'
+      - 'sfbgs00f_a.esm'
+      - 'sfbgs019.esm'
+      - 'sfbgs01b.esm'
+      - 'sfbgs01c.esm'
+      - 'sfbgs021.esm'
 
   - name: 'sfbgs024.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/66311a58-23a4-4950-9b25-d70f693fadc0/Civilian_Survival_Suit/'
         name: 'Civilian Survival Suit'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
+      - 'sfbgs00e.esm'
+      - 'sfbgs00f_a.esm'
+      - 'sfbgs019.esm'
+      - 'sfbgs01b.esm'
+      - 'sfbgs01c.esm'
+      - 'sfbgs021.esm'
+      - 'sfbgs023.esm'
 
   - name: 'sfbgs02a_a.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/128b6982-590d-47eb-b8cd-b20917b2de13/Allied_Desert_Camo_Skin_Pack/'
         name: 'Allied Desert Camo Skin Pack'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
+      - 'sfbgs00e.esm'
+      - 'sfbgs00f_a.esm'
+      - 'sfbgs019.esm'
+      - 'sfbgs01b.esm'
+      - 'sfbgs01c.esm'
+      - 'sfbgs021.esm'
+      - 'sfbgs023.esm'
+      - 'sfbgs024.esm'
 
   - name: 'sfbgs02b_a.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/4d2573b0-b5fb-4e18-ad2a-eb93243e9338/Allied_Winter_Camo_Skin_Pack/'
         name: 'Allied Winter Camo Skin Pack'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
+      - 'sfbgs00e.esm'
+      - 'sfbgs00f_a.esm'
+      - 'sfbgs019.esm'
+      - 'sfbgs01b.esm'
+      - 'sfbgs01c.esm'
+      - 'sfbgs021.esm'
+      - 'sfbgs023.esm'
+      - 'sfbgs024.esm'
+      - 'sfbgs02a_a.esm'
 
   - name: 'sfbgs031.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/a4c2c041-fcd5-455b-a8a4-41e106ba3de1/Creature_Plushie_Set/'
         name: 'Creature Plushie Set'
     group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
+      - 'sfbgs00e.esm'
+      - 'sfbgs00f_a.esm'
+      - 'sfbgs019.esm'
+      - 'sfbgs01b.esm'
+      - 'sfbgs01c.esm'
+      - 'sfbgs021.esm'
+      - 'sfbgs023.esm'
+      - 'sfbgs024.esm'
+      - 'sfbgs02a_a.esm'
+      - 'sfbgs02b_a.esm'
 
   - name: '(blueprintships-)?sfta0[1-6]\.esm'
     url:
