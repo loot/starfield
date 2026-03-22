@@ -520,7 +520,7 @@ plugins:
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/4bf1a31f-46d5-47bf-a5e6-d0f9e2496d0c/Trackers_Alliance__The_Complete_Bounty_Series'
         name: 'Trackers Alliance: The Complete Bounty Series'
-    group: *bgsCreationsGroup
+    group: *bgsCreationsTrackersAllianceGroup
 
   - name: 'sfta02.esm'
     after: [ 'sfta01.esm' ]
