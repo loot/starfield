@@ -780,6 +780,14 @@ plugins:
       - 'sfta04.esm'
       - 'sfta05.esm'
 
+  - name: 'blueprintships-sfta03.esm'
+    after: [ 'BlueprintShips-Starfield.esm' ]
+
+  - name: 'blueprintships-sfta06.esm'
+    after:
+      - 'BlueprintShips-Starfield.esm'
+      - 'blueprintships-sfta03.esm'
+
   - name: 'kgcdoom.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/6d89fcba-9940-4d8b-abc7-5cdb2c9b5a4d/At_Hell__39_s_Gate/'
