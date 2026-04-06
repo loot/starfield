@@ -745,6 +745,34 @@ plugins:
       - 'sfbgs02a_a.esm'
       - 'sfbgs02b_a.esm'
 
+  - name: 'sfbgs036.esm'
+    url:
+      - link: 'https://creations.bethesda.net/en/starfield/details/739ff637-e4f7-4e4e-bc0b-c5e7795d10a5/Battle-Hardened_Beowulf_Skin/'
+        name: 'Battle-Hardened Beowulf Skin'
+    group: *bgsCreationsGroup
+    after:
+      - 'sfbgs009.esm'
+      - 'sfbgs00a_a.esm'
+      - 'sfbgs00a_d.esm'
+      - 'sfbgs00a_e.esm'
+      - 'sfbgs00a_f.esm'
+      - 'sfbgs00a_g.esm'
+      - 'sfbgs00a_i.esm'
+      - 'sfbgs00a_j.esm'
+      - 'sfbgs00b.esm'
+      - 'sfbgs00c.esm'
+      - 'sfbgs00e.esm'
+      - 'sfbgs00f_a.esm'
+      - 'sfbgs019.esm'
+      - 'sfbgs01b.esm'
+      - 'sfbgs01c.esm'
+      - 'sfbgs021.esm'
+      - 'sfbgs023.esm'
+      - 'sfbgs024.esm'
+      - 'sfbgs02a_a.esm'
+      - 'sfbgs02b_a.esm'
+      - 'sfbgs031.esm'
+
   - name: '(blueprintships-)?sfta0[1-6]\.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/4bf1a31f-46d5-47bf-a5e6-d0f9e2496d0c/Trackers_Alliance__The_Complete_Bounty_Series'
