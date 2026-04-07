@@ -393,6 +393,18 @@ plugins:
         name: 'Starfield: Shattered Space'
     group: *mainGroup
 
+  - name: 'SFBGS050.esm'
+    url:
+      - link: 'https://store.steampowered.com/app/3763700/Starfield__Terran_Armada/'
+        name: 'Starfield - Terran Armada'
+    group: *mainGroup
+
+  - name: 'BlueprintShips-SFBGS050.esm'
+    url:
+      - link: 'https://store.steampowered.com/app/3763700/Starfield__Terran_Armada/'
+        name: 'Starfield - Terran Armada'
+    group: *mainGroup
+
 ###### Official BGS Creations ######
   - name: 'sfbgs009.esm'
     url:
