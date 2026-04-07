@@ -381,6 +381,10 @@ plugins:
     group: *mainGroup
   - name: 'SFBGS008.esm'
     group: *mainGroup
+  - name: 'SFBGS00D.esm'
+    group: *mainGroup
+  - name: 'SFBGS047.esm'
+    group: *mainGroup
 
 ###### Official DLC ######
   - name: 'ShatteredSpace.esm'
