@@ -381,12 +381,28 @@ plugins:
     group: *mainGroup
   - name: 'SFBGS008.esm'
     group: *mainGroup
+  - name: 'SFBGS00D.esm'
+    group: *mainGroup
+  - name: 'SFBGS047.esm'
+    group: *mainGroup
 
 ###### Official DLC ######
   - name: 'ShatteredSpace.esm'
     url:
       - link: 'https://creations.bethesda.net/en/starfield/details/b6b52ca2-3f1f-4316-bef8-dcb0bb2dcc32/Starfield__Shattered_Space/'
         name: 'Starfield: Shattered Space'
+    group: *mainGroup
+
+  - name: 'SFBGS050.esm'
+    url:
+      - link: 'https://store.steampowered.com/app/3763700/Starfield__Terran_Armada/'
+        name: 'Starfield - Terran Armada'
+    group: *mainGroup
+
+  - name: 'BlueprintShips-SFBGS050.esm'
+    url:
+      - link: 'https://store.steampowered.com/app/3763700/Starfield__Terran_Armada/'
+        name: 'Starfield - Terran Armada'
     group: *mainGroup
 
 ###### Official BGS Creations ######
