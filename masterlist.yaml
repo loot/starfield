@@ -271,18 +271,18 @@ globals:
   # Starfield
   - <<: *versionOldX
     subs: [ '**Starfield**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.16.236.0", <)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", <, "1.16.236.0")'
   - <<: *versionUpToDateX
     subs: [ '**Starfield**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.16.236.0", >=)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", >=, "1.16.236.0")'
 
   # SFSE
   - <<: *versionOldX
     subs: [ '**[SFSE](https://www.nexusmods.com/starfield/mods/106/)**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.16.236.0", >=) and file("../sfse_loader.exe") and file("../sfse_1_16_236.dll") and version("../sfse_1_16_236.dll", "0.0.2.19", <)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", >=, "1.16.236.0") and file("../sfse_loader.exe") and file("../sfse_1_16_236.dll") and version("../sfse_1_16_236.dll", <, "0.0.2.19")'
   - <<: *versionUpToDateX
     subs: [ '**SFSE**' ]
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.16.236.0", >=) and version("../sfse_1_16_236.dll", "0.0.2.19", >=)'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", >=, "1.16.236.0") and version("../sfse_1_16_236.dll", >=, "0.0.2.19")'
 
 # SFSE
   # Missing
@@ -315,7 +315,7 @@ globals:
       - '[Plugins.txt Enabler](https://www.nexusmods.com/starfield/mods/4157/)'
       - 'Starfield'
       - '1.12.30.0'
-    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", "1.12.30.0", >=) and (file("SFSE/Plugins/SFPluginsTxtEnabler.dll") or file("../SFPluginsTxtEnabler.asi"))'
+    condition: 'readable("../Starfield.exe") and product_version("../Starfield.exe", >=, "1.12.30.0") and (file("SFSE/Plugins/SFPluginsTxtEnabler.dll") or file("../SFPluginsTxtEnabler.asi"))'
 
 groups:
   - name: &mainGroup Main Plugins
