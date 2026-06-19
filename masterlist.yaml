@@ -878,6 +878,15 @@ plugins:
         name: 'Unofficial Shattered Space Patch (Bethesda.net Mods)'
     group: *fixesGroup
     after: [ 'unofficial starfield patch.esm' ]
+    
+  - name: 'unofficial terran armada patch.esm'
+    url:
+      - link: 'https://www.nexusmods.com/starfield/mods/143/'
+        name: 'Unofficial Terran Armada Patch (Nexus Mods)'
+      - link: 'https://creations.bethesda.net/en/starfield/details/62b692fd-52ce-4cdc-a68a-3021919a785b/Unofficial_Terran_Armada_Patch/'
+        name: 'Unofficial Terran Armada Patch (Bethesda.net Mods)'
+    group: *fixesGroup
+    after: [ 'unofficial shattered space patch.esm' ]
 
 ###### Modding Tools - Resources ######
 ###### Modding Tools - Generated Files ######
